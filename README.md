@@ -24,31 +24,33 @@ Follow these steps to set up your development environment:
 
 4. Run `composer install` to install Laravel's dependencies.
 
-5. Copy the generated keys in laravel/app/secrets/oauth to laravel/.env.
-
-6. Create passport keys:
+5. Create passport keys:
 
    ```
    php artisan passport:keys
    ```
 
-7. Copy the generated keys in laravel/app/secrets/oauth to .env.
+6. Duplicate laravel/.env.example as laravel/.env.
 
-8. Run migration and seeders:
+7. Copy the generated keys in laravel/app/secrets/oauth to laravel/.env.
+
+8. Copy the generated keys in laravel/app/secrets/oauth to .env.
+
+9. Run migration and seeders:
 
    ```
    php artisan migrate:fresh --seed
    ```
 
-9. Create personal access client:
+10. Create personal access client:
 
-   ```
-   php artisan passport:client --personal
-   ```
+    ```
+    php artisan passport:client --personal
+    ```
 
-10. Copy the client id and client secrets to .env.
+11. Copy the client id and client secrets to .env.
 
-11. After the installation is complete, exit the container's terminal:
+12. After the installation is complete, exit the container's terminal:
     ```
     exit
     ```
