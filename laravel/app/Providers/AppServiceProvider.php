@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Auth\Notifications\VerifyEmail;
+use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
@@ -37,5 +39,13 @@ class AppServiceProvider extends ServiceProvider
         ]);
         Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
         Passport::enablePasswordGrant();
+
+        VerifyEmail::toMailUsing(function (object $notifiable, string $url) {
+            return (new MailMessage)
+                ->from(env('MAIL_FROM_ADDRESS'), 'PWF Australia')
+                ->subject('Verify Email Address')
+                ->line('Click the button below to verify your email address.')
+                ->action('Verify Email Address', $url);
+        });
     }
 }
