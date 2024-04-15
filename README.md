@@ -24,7 +24,7 @@ Follow these steps to set up your development environment:
 
 4. Run `composer install` to install Laravel's dependencies.
 
-5. copy the generated keys in laravel/app/secrets/oauth to .env.
+5. Copy the generated keys in laravel/app/secrets/oauth to laravel/.env.
 
 6. Create passport keys:
 
