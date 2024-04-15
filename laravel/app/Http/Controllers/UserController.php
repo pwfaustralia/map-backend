@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -25,6 +26,8 @@ class UserController extends Controller
         $user_data = $request->all();
         $user_data['password'] = bcrypt($user_data['password']);
         $user = User::create($user_data);
+
+        event(new Registered($user));
 
         return response()->json($user, 200);
     }

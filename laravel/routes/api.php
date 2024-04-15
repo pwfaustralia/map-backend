@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\VerifyEmailController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/login', 'App\Http\Controllers\UserController@login');
@@ -28,3 +30,14 @@ Route::prefix('clients')->middleware('auth:api')->group(function () {
 
     Route::delete('/{id}', 'App\Http\Controllers\ClientController@deleteClient')->middleware('scope:delete-clients');
 });
+
+// Verify email
+Route::get('/email/verify/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
+    ->middleware(['signed', 'throttle:6,1'])
+    ->name('verification.verify');
+
+// Resend link to verify email
+Route::post('/email/verify/resend', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+    return response(['message' => 'Verification link sent!'], 200);
+})->middleware(['auth:api', 'throttle:6,1'])->name('verification.send');

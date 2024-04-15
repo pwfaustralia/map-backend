@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+    'base_url' => env('APP_BASE_URL', 'http://localhost'),
+    'frontend_url' => env('FRONTEND_URL', 'http://localhost'),
     /*
     |--------------------------------------------------------------------------
     | Application Name
