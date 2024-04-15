@@ -1,0 +1,26 @@
+﻿user_role_id,scope_name,scope_description
+1,create-clients,Create Clients
+1,update-clients,Update Clients
+1,view-clients,View Clients
+1,delete-clients,Delete Clients
+1,create-users,Create Users
+1,update-users,Update Users
+1,view-users,View Users
+1,view-all-users,View all Users
+1,delete-users,Delete Users
+1,view-all-clients,View all Clients
+1,delete-clients,Delete Clients
+4,default-scope,Default scope for new Users
+2,create-clients,Create Clients
+2,update-clients,Update Clients
+2,view-clients,View Clients
+2,view-all-clients,View all Clients
+2,delete-clients,Delete Clients
+2,create-users,Create Users
+2,update-users,Update Users
+2,view-users,View Users
+2,view-all-users,View all Users
+2,delete-users,Delete Users
+3,update-clients,Update Clients
+3,view-clients,View Clients
+3,view-all-clients,View all Clients

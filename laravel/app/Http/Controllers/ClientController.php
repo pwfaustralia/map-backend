@@ -1,0 +1,88 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Client;
+use App\Rules\UserExistsRule;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
+
+class ClientController extends Controller
+{
+    public function createClient(Request $request)
+    {
+        $validation = Validator::make($request->all(), [
+            'first_name' => 'required|max:32|min:2',
+            'last_name' => 'required|max:32|min:2',
+            'email' => 'required|email|unique:clients,email',
+            'user_id' => ['required', 'numeric', new UserExistsRule]
+        ]);
+
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+
+        $client = Client::create(request()->all());
+        return $client::find($client->id);
+    }
+    public function getClient(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id')], [
+            'id' => ['required', Rule::exists('clients', 'id')->whereNull('deleted_at')]
+        ]);
+
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+
+        $client = Client::with(['user', 'physicalAddress', 'postalAddress'])->find($request->route('id'));
+
+        return response($client, 200);
+    }
+    public function listClients()
+    {
+        $clients = Client::paginate(10);
+
+        return response($clients, 200);
+    }
+    public function deleteClient(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id')], [
+            'id' => 'required|exists:clients,id'
+        ]);
+
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+
+        $client_to_be_deleted = Client::find($request->route('id'));
+        $client_to_be_deleted->delete();
+
+        if ($client_to_be_deleted->trashed()) {
+            return response(['deleted' => true], 200);
+        } else {
+            return response(['deleted' => false], 200);
+        }
+    }
+    public function updateClient(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id'), ...$request->all()], [
+            'id' => 'required|exists:clients,id',
+            'first_name' => 'max:32|min:2',
+            'last_name' => 'max:32|min:2',
+            'email' => ['email', Rule::unique('clients', 'email')->ignore($request->route('id'))],
+            'user_id' => ['numeric', new UserExistsRule]
+        ]);
+
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+
+        $client = Client::with(['user', 'physicalAddress', 'postalAddress'])->find($request->route('id'));
+
+        $client->update($request->all());
+
+        return response($client, 200);
+    }
+}
