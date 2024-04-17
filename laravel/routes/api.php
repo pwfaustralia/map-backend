@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Authentication
-Route::post('/login', 'App\Http\Controllers\UserController@login');
+Route::post('/users/login', 'App\Http\Controllers\UserController@login');
 
 // Users
 Route::prefix('/users')->middleware('auth:api')->group(function () {
