@@ -48,7 +48,7 @@ class UserController extends Controller
         foreach ($user->userRole->rolePermissions as $permission) {
             array_push($scopes, $permission->scope_name);
         }
-        $user['token'] = $user->createToken("$user->name Access Token", $scopes)->accessToken;
+        $access_token = $user->createToken("$user->name Access Token", $scopes)->accessToken;
 
         if ($user->userRole->role_name == 'Super Admin') {
         }
@@ -72,7 +72,7 @@ class UserController extends Controller
 
         return response()->json($user, 200)->cookie(
             'accessToken',
-            $user['token'],
+            $access_token,
             1440
         );
     }
