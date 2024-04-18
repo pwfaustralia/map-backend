@@ -17,7 +17,7 @@ Route::prefix('/users')->middleware('auth:api')->group(function () {
 });
 
 // Clients
-Route::prefix('clients')->middleware('auth:api')->group(function () {
+Route::prefix('clients')->middleware(['cookie-auth', 'auth:api'])->group(function () {
     Route::post('/', 'App\Http\Controllers\ClientController@createClient')->middleware('scope:create-clients');
     Route::put('/{id}', 'App\Http\Controllers\ClientController@updateClient')->middleware('scope:update-clients');
     Route::get('/', 'App\Http\Controllers\ClientController@listClients')->middleware('scope:view-all-clients');

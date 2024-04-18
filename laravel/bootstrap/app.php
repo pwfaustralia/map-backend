@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Middleware\CheckForAnyScope;
+use App\Http\Middleware\CheckScopes;
+use App\Http\Middleware\CookieAuth;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -13,7 +16,14 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-            'scopes' => \Laravel\Passport\Http\Middleware\CheckScopes::class, 'scope' => \Laravel\Passport\Http\Middleware\CheckForAnyScope::class
+            'cookie-auth' => CookieAuth::class,
+            'scopes' => CheckScopes::class,
+            'scope' => CheckForAnyScope::class,
+        ]);
+        $middleware->priority([
+            'auth:api',
+            'scope',
+            'cookie-auth'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

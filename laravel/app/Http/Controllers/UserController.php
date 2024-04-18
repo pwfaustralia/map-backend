@@ -70,7 +70,11 @@ class UserController extends Controller
 
         $user['default_page'] = $default_page;
 
-        return response()->json($user, 200);
+        return response()->json($user, 200)->cookie(
+            'accessToken',
+            $user['token'],
+            1440
+        );
     }
     public function getUser(Request $request)
     {
