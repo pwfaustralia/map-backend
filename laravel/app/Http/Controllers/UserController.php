@@ -49,6 +49,27 @@ class UserController extends Controller
             array_push($scopes, $permission->scope_name);
         }
         $user['token'] = $user->createToken("$user->name Access Token", $scopes)->accessToken;
+
+        if ($user->userRole->role_name == 'Super Admin') {
+        }
+        $default_page = "";
+        switch ($user->userRole->role_name) {
+            case 'Super Admin':
+                $default_page = '/clients';
+                break;
+            case 'Admin':
+                $default_page = '/clients';
+                break;
+            case 'Staff':
+                $default_page = '/clients';
+                break;
+            case 'Client':
+                $default_page = '/dashboard';
+                break;
+        }
+
+        $user['default_page'] = $default_page;
+
         return response()->json($user, 200);
     }
     public function getUser(Request $request)
