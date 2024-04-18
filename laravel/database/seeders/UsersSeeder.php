@@ -15,13 +15,15 @@ class UsersSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->command->info('Creating super admin user...');
-        User::create(['email' => 'hello@pwf.com.au', 'password' => bcrypt('LK^3gxs8!!8&hu'), 'user_role_id' => 1, 'name' => 'PWF Australia']);
-        $this->command->info('Super admin user created.');
+        if (!User::where('email', '=', 'hello@pwf.com.au')->exists()) {
+            $this->command->info('Creating super admin user...');
+            User::create(['email' => 'hello@pwf.com.au', 'password' => bcrypt('LK^3gxs8!!8&hu'), 'user_role_id' => 1, 'name' => 'PWF Australia']);
+            $this->command->info('Super admin user created.');
+        }
 
         $this->command->info('Creating fake client users...');
         // Create fake client users
-        User::factory()->count(10)->create()->each(function ($user) {
+        User::factory()->count(100)->create()->each(function ($user) {
             $physical_address = Address::factory()->create();
             $postal_address = Address::factory()->create();
             $client = Client::factory()->state([

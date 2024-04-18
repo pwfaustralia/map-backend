@@ -40,9 +40,11 @@ class ClientController extends Controller
 
         return response($client, 200);
     }
-    public function listClients()
+    public function listClients(Request $request)
     {
-        $clients = Client::paginate(10);
+        $per_page = (int)$request['per_page'] ?? 3;
+
+        $clients = Client::paginate($per_page);
 
         return response($clients, 200);
     }

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/users/login', 'App\Http\Controllers\UserController@login');
 
 // Users
-Route::prefix('/users')->middleware('auth:api')->group(function () {
+Route::prefix('/users')->middleware(['cookie-auth', 'auth:api'])->group(function () {
     Route::post('/', 'App\Http\Controllers\UserController@register')->middleware('scope:create-users');
     Route::put('/{id}', 'App\Http\Controllers\UserController@updateClient')->middleware('scope:update-users');
     Route::get('/', 'App\Http\Controllers\UserController@listUsers')->middleware('scope:view-all-users');
@@ -34,4 +34,4 @@ Route::get('/email/verify/{id}/{hash}', [VerifyEmailController::class, '__invoke
 Route::post('/email/verify/resend', function (Request $request) {
     $request->user()->sendEmailVerificationNotification();
     return response(['message' => 'Verification link sent!'], 200);
-})->middleware(['auth:api', 'throttle:6,1'])->name('verification.send');
+})->middleware(['cookie-auth', 'auth:api', 'throttle:6,1'])->name('verification.send');
