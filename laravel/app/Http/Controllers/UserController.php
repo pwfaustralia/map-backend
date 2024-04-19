@@ -31,6 +31,7 @@ class UserController extends Controller
 
         return response()->json($user, 200);
     }
+
     public function login()
     {
         $credentials = request(['email', 'password']);
@@ -41,6 +42,7 @@ class UserController extends Controller
 
         return $this->respondWithToken($credentials['email']);
     }
+
     protected function respondWithToken($email)
     {
         $user = User::with('userRole.rolePermissions')->where('email', '=', $email)->first();
@@ -76,6 +78,7 @@ class UserController extends Controller
             1440
         );
     }
+
     public function getUser(Request $request)
     {
         $validation = Validator::make(['id' => $request->route('id')], [
@@ -90,12 +93,14 @@ class UserController extends Controller
 
         return response($user, 200);
     }
+
     public function listUsers()
     {
         $users = User::with(['userRole'])->paginate(10);
 
         return response($users, 200);
     }
+
     public function deleteUser(Request $request)
     {
         $validation = Validator::make(['id' => $request->route('id')], [
@@ -115,6 +120,7 @@ class UserController extends Controller
             return response(['deleted' => false], 200);
         }
     }
+
     public function updateUser(Request $request)
     {
         $validation = Validator::make(['id' => $request->route('id'), ...$request->all()], [
@@ -133,5 +139,18 @@ class UserController extends Controller
         $user->update($request->all());
 
         return response($user, 200);
+    }
+
+    public function me()
+    {
+        return $this->respondWithToken(Auth::user()->email);
+    }
+
+    public function logout()
+    {
+        return response()->json(["success" => true], 200)->cookie(
+            'accessToken',
+            null
+        );
     }
 }
