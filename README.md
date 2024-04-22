@@ -22,38 +22,31 @@ Follow these steps to set up your development environment:
    docker-compose up -d
    ```
 
-4. Run `composer install` to install Laravel's dependencies.
+4. Run migration & seeders from your local terminal.
+
+   ```
+   docker exec laravel-app php artisan migrate:fresh --seed
+   ```
 
 5. Create passport keys:
 
    ```
-   php artisan passport:keys
+   docker exec laravel-app php artisan passport:keys
    ```
 
-6. Duplicate laravel/.env.example as laravel/.env.
+6. Rename `.env.example` to `.env`.
 
-7. Copy the generated keys in laravel/app/secrets/oauth to laravel/.env.
+7. Copy the generated keys in `app/secrets/oauth` to `.env`.
 
-8. Copy the generated keys in laravel/app/secrets/oauth to .env.
+8. Set up `MAIL_` variables based on your preferred mail server provider like Mailgun.
 
-9. Run migration and seeders:
+9. Create personal access client:
 
    ```
-   php artisan migrate:fresh --seed
+   docker exec laravel-app php artisan passport:client --personal
    ```
 
-10. Create personal access client:
-
-    ```
-    php artisan passport:client --personal
-    ```
-
-11. Copy the client id and client secrets to .env.
-
-12. After the installation is complete, exit the container's terminal:
-    ```
-    exit
-    ```
+10. Copy the `client id` and `client secrets` to `.env`.
 
 Now, your Laravel project should be up and running on port 8080. You can access it in your web browser at `http://localhost:8080`.
 

@@ -37,8 +37,12 @@ WORKDIR /var/www/html
 # Copy the Laravel application files into the container.
 COPY . .
 
+COPY .env.example .env
+
+RUN mkdir -p ./app/secrets/oauth
+
 # Install Laravel dependencies using Composer.
-RUN composer install --no-interaction --optimize-autoloader
+RUN composer install
 
 # Set permissions for Laravel.
 RUN chown -R www-data:www-data storage bootstrap/cache
@@ -49,4 +53,4 @@ EXPOSE 80
 # Start Apache web server.
 CMD ["apache2-foreground"]
 
-# You can add any additional configurations or commands required for Laravel 10 here.
+# You can add any additional configurations or commands required for Laravel 11 here.

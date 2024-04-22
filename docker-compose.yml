@@ -2,11 +2,12 @@ version: '3.8'
 
 services:
   # Laravel Application
-  app:
+  laravel:
     build:
       context: ./laravel
       dockerfile: Dockerfile
     container_name: laravel-app
+    restart: on-failure
     volumes:
       - ./laravel:/var/www/html
     ports:
@@ -22,6 +23,7 @@ services:
   mysql:
     image: mysql:8
     container_name: laravel-mysql
+    restart: on-failure
     ports:
       - "3306:3306"
     environment:
@@ -31,6 +33,19 @@ services:
       MYSQL_PASSWORD: YQA1dwq3pum.qyw5qrf
     volumes:
       - ./mysql_data:/var/lib/mysql
+    networks:
+      - laravel-net
+
+  typesense:
+    image: typesense/typesense:27.0.rc4
+    restart: on-failure
+    ports:
+      - "8108:8108"
+    volumes:
+      - ./typesense-data:/data
+    command: '--data-dir /data --api-key=af08c803-90e4-418d-8736-9211204af5e2 --enable-cors'
+    depends_on:
+      - laravel
     networks:
       - laravel-net
 
