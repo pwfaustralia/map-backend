@@ -44,7 +44,11 @@ class ClientController extends Controller
     {
         $per_page = (int)$request['per_page'] ?? 3;
 
-        $clients = Client::paginate($per_page);
+        if ($request->has('q')) {
+            $clients = Client::search()->options($request->only(['q', 'query_by', 'filter_by', 'sort_by', 'per_page', 'page', 'use_cache']))->paginate($per_page);
+        } else {
+            $clients = Client::paginate($per_page);
+        }
 
         return response($clients, 200);
     }

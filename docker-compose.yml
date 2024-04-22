@@ -44,10 +44,23 @@ services:
     volumes:
       - ./typesense-data:/data
     command: '--data-dir /data --api-key=af08c803-90e4-418d-8736-9211204af5e2 --enable-cors'
-    depends_on:
-      - laravel
+    networks:
+      - laravel-net
+
+  redis:
+    image: redis/redis-stack:latest
+    restart: on-failure
+    ports:
+      - "6379:6379"
+    command: 'redis-server --save 20 1 --loglevel warning'
+    volumes:
+      - cache:/data
     networks:
       - laravel-net
 
 networks:
   laravel-net:
+
+volumes:
+  cache:
+    driver: local

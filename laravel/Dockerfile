@@ -44,6 +44,8 @@ RUN mkdir -p ./app/secrets/oauth
 # Install Laravel dependencies using Composer.
 RUN composer install
 
+RUN ln -sf /bin/bash /bin/sh
+
 # Set permissions for Laravel.
 RUN chown -R www-data:www-data storage bootstrap/cache
 
