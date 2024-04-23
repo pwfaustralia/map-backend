@@ -186,42 +186,52 @@ return [
                         [
                             'name' => 'first_name',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'last_name',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'middle_name',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'preferred_name',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'email',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'home_phone',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'work_phone',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'mobile_phone',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'fax',
                             'type' => 'string',
+                            'sort' => true
                         ],
                         [
                             'name' => 'created_at',
                             'type' => 'int64',
+                            'sort' => true
                         ],
 
                     ],
