@@ -43,9 +43,16 @@ class ClientController extends Controller
     public function listClients(Request $request)
     {
         $per_page = (int)$request['per_page'] ?? 3;
+        $search_params = ['q', 'query_by', 'filter_by', 'sort_by', 'per_page', 'page', 'use_cache'];
+
+        foreach ($search_params as $param) {
+            if ($request->has($param)) {
+                $request[$param] = urldecode($request[$param]);
+            }
+        }
 
         if ($request->has('q')) {
-            $clients = Client::search()->options($request->only(['q', 'query_by', 'filter_by', 'sort_by', 'per_page', 'page', 'use_cache']))->paginate($per_page);
+            $clients = Client::search()->options($request->only($search_params))->paginate($per_page);
         } else {
             $clients = Client::paginate($per_page);
         }
