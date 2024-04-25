@@ -50,12 +50,9 @@ class ClientController extends Controller
                 $request[$param] = urldecode($request[$param]);
             }
         }
-
-        if ($request->has('q')) {
-            $clients = Client::search()->options($request->only($search_params))->paginate($per_page);
-        } else {
-            $clients = Client::paginate($per_page);
-        }
+        $clients = Client::search()->options($request->only($search_params))->query(function ($query) {
+            $query->with("physicalAddress");
+        })->paginate($per_page);
 
         return response($clients, 200);
     }

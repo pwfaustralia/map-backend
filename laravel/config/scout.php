@@ -224,6 +224,16 @@ return [
                             'sort' => true
                         ],
                         [
+                            'name' => 'physical_address.town',
+                            'type' => 'string',
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'physical_address.street',
+                            'type' => 'string',
+                            'sort' => true
+                        ],
+                        [
                             'name' => 'fax',
                             'type' => 'string',
                             'sort' => true
@@ -238,7 +248,7 @@ return [
                     'default_sorting_field' => 'created_at',
                 ],
                 'search-parameters' => [
-                    'query_by' => 'first_name,last_name,middle_name,preferred_name,email'
+                    'query_by' => 'first_name,last_name,middle_name,preferred_name,email,physical_address.town,physical_address.street'
                 ],
             ],
         ],

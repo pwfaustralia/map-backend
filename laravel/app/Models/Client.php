@@ -35,6 +35,8 @@ class Client extends Model
         return array_merge($this->toArray(), [
             'id' => (string) $this->id,
             'created_at' => $this->created_at->timestamp,
+            'physical_address.town' => (string) $this->physicalAddress->town,
+            'physical_address.street' => (string) $this->physicalAddress->street_name,
         ]);
     }
 }

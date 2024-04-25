@@ -20,10 +20,12 @@ class ClientFactory extends Factory
             'first_name' => fake()->firstName(),
             'last_name' => fake()->lastName(),
             'preferred_name' => fake()->name(),
+            'middle_name' => fake()->lastName(),
             'email' => fake()->unique()->safeEmail(),
             'home_phone' => fake()->phoneNumber(),
             'work_phone' => fake()->phoneNumber(),
-            'mobile_phone' => fake()->phoneNumber()
+            'mobile_phone' => fake()->phoneNumber(),
+            'fax' => fake()->phoneNumber()
         ];
     }
 }
