@@ -21,9 +21,17 @@ class Client extends Model
     {
         return $this->belongsTo(Address::class, 'physical_address_id');
     }
+
     public function postalAddress()
     {
         return $this->belongsTo(Address::class, 'postal_address_id');
+    }
+
+    public function customFields()
+    {
+        return $this->morphOne(CustomField::class, 'custom_fieldable')->withDefault([
+            "data" => json_encode([])
+        ]);
     }
 
     public function user()
@@ -38,11 +46,12 @@ class Client extends Model
             'created_at' => $this->created_at->timestamp,
             'physical_address.town' => (string) $this->physicalAddress->town,
             'physical_address.street_name' => (string) $this->physicalAddress->street_name,
+            'custom_fields.data' => (string) $this->customFields?->data,
         ]);
     }
 
     protected function makeAllSearchableUsing(Builder $query)
     {
-        return $query->with('physicalAddress');
+        return $query->with(['physicalAddress', 'postalAddress', 'customFields']);
     }
 }

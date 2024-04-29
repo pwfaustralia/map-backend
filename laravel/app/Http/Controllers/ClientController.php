@@ -52,7 +52,7 @@ class ClientController extends Controller
         }
         $clients = tap(
             Client::search()->options($request->only($search_params))->paginate($per_page),
-            fn ($c) => $c->load('physicalAddress')
+            fn ($c) => $c->load(['physicalAddress', 'customFields'])
         );
 
         return response($clients, 200);
