@@ -18,7 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'cookie-auth' => CookieAuth::class,
             'scopes' => CheckScopes::class,
-            'scope' => CheckForAnyScope::class,
+            'scope' => CheckForAnyScope::class
         ]);
         $middleware->priority([
             'auth:api',

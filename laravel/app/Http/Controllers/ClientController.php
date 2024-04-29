@@ -16,7 +16,7 @@ class ClientController extends Controller
             'first_name' => 'required|max:32|min:2',
             'last_name' => 'required|max:32|min:2',
             'email' => 'required|email|unique:clients,email',
-            'user_id' => ['required', 'numeric', new UserExistsRule]
+            'user_id' => ['required', 'uuid', new UserExistsRule]
         ]);
 
         if ($validation->fails()) {
@@ -42,7 +42,7 @@ class ClientController extends Controller
     }
     public function listClients(Request $request)
     {
-        $per_page = (int)$request['per_page'] ?? 3;
+        $per_page = (int)$request['per_page'] ?? 10;
         $search_params = ['q', 'query_by', 'filter_by', 'sort_by', 'per_page', 'page', 'use_cache'];
 
         foreach ($search_params as $param) {
@@ -83,7 +83,7 @@ class ClientController extends Controller
             'first_name' => 'max:32|min:2',
             'last_name' => 'max:32|min:2',
             'email' => ['email', Rule::unique('clients', 'email')->ignore($request->route('id'))],
-            'user_id' => ['numeric', new UserExistsRule]
+            'user_id' => ['uuid', new UserExistsRule]
         ]);
 
         if ($validation->fails()) {

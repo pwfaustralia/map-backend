@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -36,7 +37,12 @@ class Client extends Model
             'id' => (string) $this->id,
             'created_at' => $this->created_at->timestamp,
             'physical_address.town' => (string) $this->physicalAddress->town,
-            'physical_address.street' => (string) $this->physicalAddress->street_name,
+            'physical_address.street_name' => (string) $this->physicalAddress->street_name,
         ]);
+    }
+
+    protected function makeAllSearchableUsing(Builder $query)
+    {
+        return $query->with('physicalAddress');
     }
 }

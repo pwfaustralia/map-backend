@@ -229,7 +229,7 @@ return [
                             'sort' => true
                         ],
                         [
-                            'name' => 'physical_address.street',
+                            'name' => 'physical_address.street_name',
                             'type' => 'string',
                             'sort' => true
                         ],
@@ -243,12 +243,17 @@ return [
                             'type' => 'int64',
                             'sort' => true
                         ],
+                        [
+                            'name' => '__soft_deleted',
+                            'type' => 'int32',
+                            'optional' => true,
+                        ]
 
                     ],
                     'default_sorting_field' => 'created_at',
                 ],
                 'search-parameters' => [
-                    'query_by' => 'first_name,last_name,middle_name,preferred_name,email,physical_address.town,physical_address.street'
+                    'query_by' => 'first_name,last_name,middle_name,preferred_name,email,physical_address.town,physical_address.street_name'
                 ],
             ],
         ],
