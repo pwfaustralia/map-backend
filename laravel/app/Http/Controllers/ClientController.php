@@ -43,7 +43,7 @@ class ClientController extends Controller
     public function listClients(Request $request)
     {
         $per_page = (int)$request['per_page'] ?? 10;
-        $search_params = ['q', 'query_by', 'filter_by', 'sort_by', 'per_page', 'page', 'use_cache'];
+        $search_params = ['q', 'query_by', 'filter_by', 'sort_by', 'per_page', 'page', 'use_cache', 'facet_query', 'facet_by', 'group_by'];
 
         foreach ($search_params as $param) {
             if ($request->has($param)) {

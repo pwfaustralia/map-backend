@@ -50,6 +50,10 @@ Follow these steps to set up your development environment:
 
 Now, your Laravel project should be up and running on port 8080. You can access it in your web browser at `http://localhost:8080`.
 
+## How To Fix Issues
+
+- [Typesense `scout:import` issue](https://github.com/laravel/scout/issues/822)
+
 ## Features
 
 - Laravel Framework: Utilize the power of Laravel to build modern web applications.

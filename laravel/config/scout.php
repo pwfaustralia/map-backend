@@ -184,11 +184,13 @@ return [
                             'type' => 'string',
                         ],
                         [
+                            'facet' => true,
                             'name' => 'first_name',
                             'type' => 'string',
                             'sort' => true
                         ],
                         [
+                            'facet' => true,
                             'name' => 'last_name',
                             'type' => 'string',
                             'sort' => true
