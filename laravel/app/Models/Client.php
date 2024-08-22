@@ -13,7 +13,7 @@ class Client extends Model
 {
     use HasFactory, HasUuids, SoftDeletes, Searchable;
 
-    protected $fillable = ['first_name', 'last_name', 'middle_name', 'email', 'user_id', 'preferred_name', 'home_phone', 'work_phone', 'mobile_phone', 'fax', 'physical_address_id', 'postal_address_id'];
+    protected $fillable = ['first_name', 'last_name', 'middle_name', 'email', 'user_id', 'preferred_name', 'home_phone', 'work_phone', 'mobile_phone', 'fax', 'physical_address_id', 'postal_address_id', 'yodlee_username', 'yodlee_status'];
 
     protected $hidden = ['deleted_at'];
 

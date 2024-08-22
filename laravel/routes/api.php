@@ -11,6 +11,7 @@ Route::post('/users/logout', 'App\Http\Controllers\UserController@logout');
 // Users
 Route::prefix('/users')->middleware(['cookie-auth', 'auth:api'])->group(function () {
     Route::get('/me', 'App\Http\Controllers\UserController@me');
+    Route::get('/checkup', 'App\Http\Controllers\UserController@access_checkup');
     Route::post('/', 'App\Http\Controllers\UserController@register')->middleware('scope:create-users');
     Route::put('/{id}', 'App\Http\Controllers\UserController@updateClient')->middleware('scope:update-users');
     Route::get('/', 'App\Http\Controllers\UserController@listUsers')->middleware('scope:view-all-users');

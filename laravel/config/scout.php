@@ -208,6 +208,7 @@ return [
                         [
                             'name' => 'email',
                             'type' => 'string',
+                            'infix' => true,
                             'sort' => true
                         ],
                         [
@@ -226,13 +227,25 @@ return [
                             'sort' => true
                         ],
                         [
+                            'name' => 'yodlee_username',
+                            'type' => 'string',
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'yodlee_status',
+                            'type' => 'string',
+                            'sort' => true
+                        ],
+                        [
                             'name' => 'physical_address.town',
                             'type' => 'string',
+                            'infix' => true,
                             'sort' => true
                         ],
                         [
                             'name' => 'physical_address.street_name',
                             'type' => 'string',
+                            'infix' => true,
                             'sort' => true
                         ],
                         [

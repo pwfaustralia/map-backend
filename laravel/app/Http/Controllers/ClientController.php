@@ -16,6 +16,7 @@ class ClientController extends Controller
             'first_name' => 'required|max:32|min:2',
             'last_name' => 'required|max:32|min:2',
             'email' => 'required|email|unique:clients,email',
+            'yodlee_username' => 'required',
             'user_id' => ['required', 'uuid', new UserExistsRule]
         ]);
 
@@ -52,7 +53,7 @@ class ClientController extends Controller
         }
         $clients = tap(
             Client::search()->options($request->only($search_params))->paginate($per_page),
-            fn ($c) => $c->load(['physicalAddress', 'customFields'])
+            fn($c) => $c->load(['physicalAddress', 'customFields'])
         );
 
         return response($clients, 200);

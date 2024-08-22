@@ -3,6 +3,11 @@
 return [
     'base_url' => env('APP_BASE_URL', 'http://localhost'),
     'frontend_url' => env('FRONTEND_URL', 'http://localhost'),
+    'yodlee_sandbox_url' => env('YODLEE_SANDBOX', 'https://sandbox.api.yodlee.com.au/ysl'),
+    'yodlee_prod_url' => env('YODLEE_URL', ''),
+    'yodlee_client_id' => env('YODLEE_CLIENT_ID', ''),
+    'yodlee_client_secret' => env('YODLEE_CLIENT_SECRET', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

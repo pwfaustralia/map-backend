@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -45,12 +46,20 @@ class UserController extends Controller
 
     protected function respondWithToken($email)
     {
-        $user = User::with('userRole.rolePermissions')->where('email', '=', $email)->first();
+        $user = User::with([
+            'userRole.rolePermissions' => function ($query) {
+                $query->select('user_role_id', 'scope_name');
+            },
+            'clients'
+        ])->where('email', '=', $email)->first();
         $scopes = [];
         foreach ($user->userRole->rolePermissions as $permission) {
             array_push($scopes, $permission->scope_name);
         }
-        $access_token = $user->createToken("$user->name Access Token", $scopes)->accessToken;
+        unset($user->userRole->rolePermissions);
+        $user->userRole->rolePermissions = $scopes;
+        $token_obj = $user->createToken("$user->name Access Token", $scopes);
+        $access_token = $token_obj->accessToken;
 
         if ($user->userRole->role_name == 'Super Admin') {
         }
@@ -70,13 +79,48 @@ class UserController extends Controller
                 break;
         }
 
-        $user['default_page'] = $default_page;
 
-        return response()->json($user, 200)->cookie(
-            'accessToken',
+        $user['default_page'] = $default_page;
+        $yodlee_usernames = array_map(fn($c) => $c->yodlee_username, array_filter($user->clients->all(), fn($c) => $c->yodlee_username != ''));
+        $yodlee_usernames = array_unique($yodlee_usernames);
+        $yodlee_tokens = array();
+
+        foreach ($yodlee_usernames as $yodlee_username) {
+            try {
+                $client = new \GuzzleHttp\Client();
+                $yodlee_url = config('app.env') == 'production' ? config('app.yodlee_prod_url') : config('app.yodlee_sandbox_url');
+                $response = $client->request('POST', $yodlee_url . '/auth/token', [
+                    'headers' => [
+                        'Api-Version' => '1.1',
+                        'loginName' => $yodlee_username,
+                        'Content-Type' => 'application/x-www-form-urlencoded'
+                    ],
+                    'form_params' => [
+                        'clientId' => config('app.yodlee_client_id'),
+                        'secret' => config('app.yodlee_client_secret')
+                    ]
+                ]);
+                $resp = json_decode($response->getBody());
+                $resp->username = $yodlee_username;
+                array_push($yodlee_tokens, $resp);
+            } catch (\GuzzleHttp\Exception\ClientException $e) {
+                $response = $e->getResponse();
+                $user['yodlee_error'] = json_decode($response->getBody());
+            }
+        }
+
+        $yodlee_tokens = array_map(fn($tok) => $tok->username . '=' . $tok->token->accessToken, $yodlee_tokens);
+        $yodlee_tokens = implode(';', $yodlee_tokens);
+
+        $expiration = $token_obj->token->expires_at->diffInSeconds(Carbon::now());
+
+        return response()->json($user, 200)->withCookie(cookie(
+            'laravel_access_token',
             $access_token,
-            1440
-        );
+            $expiration
+        ))->withHeaders([
+            'X-Yodlee-AccessToken' => $yodlee_tokens,
+        ]);
     }
 
     public function getUser(Request $request)
@@ -146,11 +190,20 @@ class UserController extends Controller
         return $this->respondWithToken(Auth::user()->email);
     }
 
+    public function access_checkup()
+    {
+        if (Auth::user() === null) return response()->json(['success' => false], 401)->withCookie(cookie(
+            'laravel_access_token',
+            null
+        ));;
+        return response()->json(['success' => true], 200);
+    }
+
     public function logout()
     {
-        return response()->json(["success" => true], 200)->cookie(
-            'accessToken',
+        return response()->json(["success" => true], 200)->withCookie(cookie(
+            'laravel_access_token',
             null
-        );
+        ));
     }
 }
