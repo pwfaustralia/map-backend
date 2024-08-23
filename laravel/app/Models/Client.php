@@ -44,9 +44,17 @@ class Client extends Model
         return array_merge($this->toArray(), [
             'id' => (string) $this->id,
             'created_at' => $this->created_at->timestamp,
-            'physical_address.town' => (string) $this->physicalAddress->town,
-            'physical_address.street_name' => (string) $this->physicalAddress->street_name,
+            'physical_address.town' => (string) isset($this->physicalAddress) ? $this->physicalAddress->town : "",
+            'physical_address.street_name' => (string) isset($this->physicalAddress) ? $this->physicalAddress->street_name : "",
             'custom_fields.data' => (string) $this->customFields?->data,
+            'preferred_name' => (string) $this->preferred_name ?? "",
+            'mobile_phone' => (string) $this->mobile_phone ?? "",
+            'work_phone' => (string) $this->work_phone ?? "",
+            'home_phone' => (string) $this->home_phone ?? "",
+            'fax' => (string) $this->fax ?? "",
+            'yodlee_status' => (string) $this->yodlee_status ?? "",
+            'yodlee_username' => (string) $this->yodlee_username ?? "",
+            'middle_name' => (string) $this->middle_name ?? ""
         ]);
     }
 

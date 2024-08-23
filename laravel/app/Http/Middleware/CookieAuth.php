@@ -15,7 +15,7 @@ class CookieAuth
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $cookie_name = 'accessToken';
+        $cookie_name = 'laravel_access_token';
 
         if (!$request->bearerToken()) {
             if ($request->hasCookie($cookie_name)) {

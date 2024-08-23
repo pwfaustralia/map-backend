@@ -7,6 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
@@ -28,7 +29,32 @@ class UserController extends Controller
         $user_data['password'] = bcrypt($user_data['password']);
         $user = User::create($user_data);
 
-        event(new Registered($user));
+
+        if ($request['with_client'] === true) {
+            $cookie = $request->cookie('laravel_access_token');
+            $header = $request->header('Authorization');
+            $access_token = $cookie ? 'Bearer ' . $cookie : $header;
+            $response = Http::withHeaders([
+                'Authorization' => $access_token
+            ])->post(
+                'http://localhost/api/clients',
+                [
+                    ...$request->all(
+                        ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email'],
+                    ),
+                    'user_id' => $user->id
+                ]
+            );
+            $create_client_resp = $response->json();
+            // $user->forceDelete();
+            return response()->json($create_client_resp);
+            if (!isset($create_client_resp['id'])) {
+                // $user->forceDelete();
+                return response()->json($response->body());
+            }
+        }
+        // $user->forceDelete();
+        // event(new Registered($user));
 
         return response()->json($user, 200);
     }
@@ -201,6 +227,10 @@ class UserController extends Controller
 
     public function logout()
     {
+        Auth::user()->tokens->each(function ($token) {
+            $token->delete();
+        });
+
         return response()->json(["success" => true], 200)->withCookie(cookie(
             'laravel_access_token',
             null

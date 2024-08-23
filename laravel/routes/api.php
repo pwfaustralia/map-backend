@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 // Authentication
 Route::post('/users/login', 'App\Http\Controllers\UserController@login');
-Route::post('/users/logout', 'App\Http\Controllers\UserController@logout');
+Route::middleware(['cookie-auth', 'auth:api'])->post('/users/logout', 'App\Http\Controllers\UserController@logout');
 
 // Users
 Route::prefix('/users')->middleware(['cookie-auth', 'auth:api'])->group(function () {

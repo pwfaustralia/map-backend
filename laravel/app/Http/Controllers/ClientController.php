@@ -23,9 +23,9 @@ class ClientController extends Controller
         if ($validation->fails()) {
             return response($validation->errors(), 202);
         }
-
         $client = Client::create(request()->all());
-        return $client::find($client->id);
+
+        return response()->json($client);
     }
     public function getClient(Request $request)
     {
