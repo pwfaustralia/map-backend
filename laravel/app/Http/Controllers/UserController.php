@@ -104,12 +104,31 @@ class UserController extends Controller
                 $default_page = '/dashboard';
                 break;
         }
-
-
         $user['default_page'] = $default_page;
+
+        $get_yodlee_acess_tokens = $this->getYodleeAccessTokens($user);
+
+        if ($get_yodlee_acess_tokens['error']) {
+            $user['yodlee_error'] = $get_yodlee_acess_tokens['error'];
+        }
+
+        $expiration = $token_obj->token->expires_at->diffInSeconds(Carbon::now());
+
+        return response()->json($user, 200)->withCookie(cookie(
+            'laravel_access_token',
+            $access_token,
+            $expiration
+        ))->withHeaders([
+            'X-Yodlee-AccessToken' => $get_yodlee_acess_tokens['tokens'],
+        ]);
+    }
+
+    public function getYodleeAccessTokens(User $user)
+    {
         $yodlee_usernames = array_map(fn($c) => $c->yodlee_username, array_filter($user->clients->all(), fn($c) => $c->yodlee_username != ''));
         $yodlee_usernames = array_unique($yodlee_usernames);
         $yodlee_tokens = array();
+        $error = null;
 
         foreach ($yodlee_usernames as $yodlee_username) {
             try {
@@ -131,22 +150,17 @@ class UserController extends Controller
                 array_push($yodlee_tokens, $resp);
             } catch (\GuzzleHttp\Exception\ClientException $e) {
                 $response = $e->getResponse();
-                $user['yodlee_error'] = json_decode($response->getBody());
+                $error = json_decode($response->getBody());
             }
         }
 
         $yodlee_tokens = array_map(fn($tok) => $tok->username . '=' . $tok->token->accessToken, $yodlee_tokens);
         $yodlee_tokens = implode(';', $yodlee_tokens);
 
-        $expiration = $token_obj->token->expires_at->diffInSeconds(Carbon::now());
-
-        return response()->json($user, 200)->withCookie(cookie(
-            'laravel_access_token',
-            $access_token,
-            $expiration
-        ))->withHeaders([
-            'X-Yodlee-AccessToken' => $yodlee_tokens,
-        ]);
+        return [
+            "tokens" => $yodlee_tokens,
+            "error" => $error
+        ];
     }
 
     public function getUser(Request $request)
