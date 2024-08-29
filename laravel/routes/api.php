@@ -17,6 +17,7 @@ Route::prefix('/users')->middleware(['cookie-auth', 'auth:api'])->group(function
     Route::get('/', 'App\Http\Controllers\UserController@listUsers')->middleware('scope:view-all-users');
     Route::get('/{id}', 'App\Http\Controllers\UserController@getUser')->middleware('scope:view-users');
     Route::delete('/{id}', 'App\Http\Controllers\UserController@deleteUser')->middleware('scope:delete-users');
+    Route::get('/{id}/yodlee', 'App\Http\Controllers\UserController@getUserYodleeAccessTokensWithHeader')->middleware('scope:view-users');
 });
 
 // Clients

@@ -123,7 +123,20 @@ class UserController extends Controller
         ]);
     }
 
-    public function getYodleeAccessTokens(User $user)
+    public function getUserYodleeAccessTokensWithHeader(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id')], [
+            'id' => 'required|exists:users,id'
+        ]);
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+        $user = User::find($request->route('id'));
+        $get_yodlee_acess_tokens = $this->getYodleeAccessTokens($user, true);
+        return response()->json($get_yodlee_acess_tokens, 200);
+    }
+
+    public function getYodleeAccessTokens(User $user, $return_as_array = false)
     {
         $yodlee_usernames = array_map(fn($c) => $c->yodlee_username, array_filter($user->clients->all(), fn($c) => $c->yodlee_username != ''));
         $yodlee_usernames = array_unique($yodlee_usernames);
@@ -154,8 +167,10 @@ class UserController extends Controller
             }
         }
 
-        $yodlee_tokens = array_map(fn($tok) => $tok->username . '=' . $tok->token->accessToken, $yodlee_tokens);
-        $yodlee_tokens = implode(';', $yodlee_tokens);
+        if (!$return_as_array) {
+            $yodlee_tokens = array_map(fn($tok) => $tok->username . '=' . $tok->token->accessToken, $yodlee_tokens);
+            $yodlee_tokens = implode(';', $yodlee_tokens);
+        }
 
         return [
             "tokens" => $yodlee_tokens,
