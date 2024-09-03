@@ -13,7 +13,7 @@ Route::prefix('/users')->middleware(['cookie-auth', 'auth:api'])->group(function
     Route::get('/me', 'App\Http\Controllers\UserController@me');
     Route::get('/checkup', 'App\Http\Controllers\UserController@access_checkup');
     Route::post('/', 'App\Http\Controllers\UserController@register')->middleware('scope:create-users');
-    Route::put('/{id}', 'App\Http\Controllers\UserController@updateClient')->middleware('scope:update-users');
+    Route::put('/{id}', 'App\Http\Controllers\UserController@updateUser')->middleware('scope:update-users');
     Route::get('/', 'App\Http\Controllers\UserController@listUsers')->middleware('scope:view-all-users');
     Route::get('/{id}', 'App\Http\Controllers\UserController@getUser')->middleware('scope:view-users');
     Route::delete('/{id}', 'App\Http\Controllers\UserController@deleteUser')->middleware('scope:delete-users');

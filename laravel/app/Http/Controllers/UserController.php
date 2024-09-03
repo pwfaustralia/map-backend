@@ -37,23 +37,19 @@ class UserController extends Controller
             $response = Http::withHeaders([
                 'Authorization' => $access_token
             ])->post(
-                'http://localhost/api/clients',
+                config('app.url') . '/api/clients',
                 [
                     ...$request->all(
-                        ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email'],
+                        ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email', 'home_phone', 'work_phone', 'mobile_phone'],
                     ),
                     'user_id' => $user->id
                 ]
             );
             $create_client_resp = $response->json();
-            // $user->forceDelete();
+
             return response()->json($create_client_resp);
-            if (!isset($create_client_resp['id'])) {
-                // $user->forceDelete();
-                return response()->json($response->body());
-            }
         }
-        // $user->forceDelete();
+
         // event(new Registered($user));
 
         return response()->json($user, 200);
@@ -231,6 +227,32 @@ class UserController extends Controller
 
         if ($validation->fails()) {
             return response($validation->errors(), 202);
+        }
+
+        if ($request['with_client'] === true) {
+            $validation = Validator::make($request->all(), [
+                'client_id' => 'required|exists:clients,id'
+            ]);
+
+            if ($validation->fails()) {
+                return response($validation->errors(), 202);
+            }
+            $cookie = $request->cookie('laravel_access_token');
+            $header = $request->header('Authorization');
+            $access_token = $cookie ? 'Bearer ' . $cookie : $header;
+            $response = Http::withHeaders([
+                'Authorization' => $access_token
+            ])->put(
+                config('app.url') . '/api/clients/' . $request['client_id'],
+                [
+                    ...$request->all(
+                        ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email', 'home_phone', 'work_phone', 'mobile_phone'],
+                    )
+                ]
+            );
+            $update_client_resp = $response->json();
+
+            return response()->json($update_client_resp);
         }
 
         $user = User::with(['userRole', 'clients'])->find($request->route('id'));
