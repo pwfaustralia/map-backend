@@ -208,6 +208,7 @@ return [
                         [
                             'name' => 'email',
                             'type' => 'string',
+                            'facet' => true,
                             'infix' => true,
                             'sort' => true
                         ],
