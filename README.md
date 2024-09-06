@@ -77,7 +77,7 @@ docker exec laravel-app php artisan db:seed
 - Client Model
   ```bash
   docker exec laravel-app php artisan scout:import "App\Models\Client"
-  docer exec laravel-app php artisan queue:work --daemon
+  docker exec laravel-app php artisan queue:work --daemon
   ```
 
 ## Known Issues
