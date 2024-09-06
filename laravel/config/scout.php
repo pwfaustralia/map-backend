@@ -196,11 +196,6 @@ return [
                             'sort' => true
                         ],
                         [
-                            'name' => 'middle_name',
-                            'type' => 'string',
-                            'sort' => true
-                        ],
-                        [
                             'name' => 'preferred_name',
                             'type' => 'string',
                             'sort' => true
@@ -228,6 +223,47 @@ return [
                             'sort' => true
                         ],
                         [
+                            'name' => 'user_id',
+                            'type' => 'string',
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'address_1',
+                            'type' => 'string',
+                            'facet' => true,
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'address_2',
+                            'type' => 'string',
+                            'facet' => true,
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'city',
+                            'type' => 'string',
+                            'facet' => true,
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'postcode',
+                            'type' => 'string',
+                            'facet' => true,
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'state',
+                            'type' => 'string',
+                            'facet' => true,
+                            'sort' => true
+                        ],
+                        [
+                            'name' => 'country',
+                            'type' => 'string',
+                            'facet' => true,
+                            'sort' => true
+                        ],
+                        [
                             'name' => 'yodlee_username',
                             'type' => 'string',
                             'sort' => true
@@ -235,18 +271,6 @@ return [
                         [
                             'name' => 'yodlee_status',
                             'type' => 'string',
-                            'sort' => true
-                        ],
-                        [
-                            'name' => 'physical_address.town',
-                            'type' => 'string',
-                            'infix' => true,
-                            'sort' => true
-                        ],
-                        [
-                            'name' => 'physical_address.street_name',
-                            'type' => 'string',
-                            'infix' => true,
                             'sort' => true
                         ],
                         [
@@ -269,7 +293,7 @@ return [
                     'default_sorting_field' => 'created_at',
                 ],
                 'search-parameters' => [
-                    'query_by' => 'first_name,last_name,middle_name,preferred_name,email,physical_address.town,physical_address.street_name'
+                    'query_by' => 'first_name,last_name,preferred_name,email,address_1,address_2,postcode,city,state,country'
                 ],
             ],
         ],

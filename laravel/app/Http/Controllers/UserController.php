@@ -31,23 +31,8 @@ class UserController extends Controller
 
 
         if ($request['with_client'] === true) {
-            $cookie = $request->cookie('laravel_access_token');
-            $header = $request->header('Authorization');
-            $access_token = $cookie ? 'Bearer ' . $cookie : $header;
-            $response = Http::withHeaders([
-                'Authorization' => $access_token
-            ])->post(
-                config('app.url') . '/api/clients',
-                [
-                    ...$request->all(
-                        ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email', 'home_phone', 'work_phone', 'mobile_phone'],
-                    ),
-                    'user_id' => $user->id
-                ]
-            );
-            $create_client_resp = $response->json();
-
-            return response()->json($create_client_resp);
+            $request['user_id'] = $user->id;
+            return $this->createOrUpdateUserWithClient($request);
         }
 
         // event(new Registered($user));
@@ -230,29 +215,8 @@ class UserController extends Controller
         }
 
         if ($request['with_client'] === true) {
-            $validation = Validator::make($request->all(), [
-                'client_id' => 'required|exists:clients,id'
-            ]);
-
-            if ($validation->fails()) {
-                return response($validation->errors(), 202);
-            }
-            $cookie = $request->cookie('laravel_access_token');
-            $header = $request->header('Authorization');
-            $access_token = $cookie ? 'Bearer ' . $cookie : $header;
-            $response = Http::withHeaders([
-                'Authorization' => $access_token
-            ])->put(
-                config('app.url') . '/api/clients/' . $request['client_id'],
-                [
-                    ...$request->all(
-                        ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email', 'home_phone', 'work_phone', 'mobile_phone'],
-                    )
-                ]
-            );
-            $update_client_resp = $response->json();
-
-            return response()->json($update_client_resp);
+            $request['user_id'] = $request['id'];
+            return $this->createOrUpdateUserWithClient($request, true);
         }
 
         $user = User::with(['userRole', 'clients'])->find($request->route('id'));
@@ -260,6 +224,34 @@ class UserController extends Controller
         $user->update($request->all());
 
         return response($user, 200);
+    }
+
+    public function createOrUpdateUserWithClient(Request $request, $isUpdate = false)
+    {
+        $validation = Validator::make($request->all(), [
+            'client_id' => 'required|exists:clients,id'
+        ]);
+
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+        $cookie = $request->cookie('laravel_access_token');
+        $header = $request->header('Authorization');
+        $access_token = $cookie ? 'Bearer ' . $cookie : $header;
+        $response = Http::withHeaders([
+            'Authorization' => $access_token
+        ])->{$isUpdate ? "put" : "post"}(
+            config('app.url') . '/api/clients/' . $request['client_id'],
+            [
+                ...$request->all(
+                    ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email', 'home_phone', 'work_phone', 'mobile_phone', 'address_1', 'address_2', 'city', 'country', 'state', 'postcode'],
+                ),
+                'user_id' => $request['user_id']
+            ]
+        );
+        $updated_or_created_client = $response->json();
+
+        return response()->json($updated_or_created_client);
     }
 
     public function me()

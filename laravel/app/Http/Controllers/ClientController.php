@@ -37,7 +37,7 @@ class ClientController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $client = Client::with(['user', 'physicalAddress', 'postalAddress'])->find($request->route('id'));
+        $client = Client::with(['user'])->find($request->route('id'));
 
         return response($client, 200);
     }
@@ -53,7 +53,7 @@ class ClientController extends Controller
         }
         $clients = tap(
             Client::search()->options($request->only($search_params))->paginate($per_page),
-            fn($c) => $c->load(['physicalAddress', 'customFields'])
+            fn($c) => $c->load(['customFields'])
         );
 
         return response($clients, 200);
@@ -91,7 +91,7 @@ class ClientController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $client = Client::with(['user', 'physicalAddress', 'postalAddress'])->find($request->route('id'));
+        $client = Client::with(['user'])->find($request->route('id'));
 
         $client->update($request->all());
 

@@ -55,7 +55,7 @@
 8. Create a personal access client for Laravel Passport:
 
    ```bash
-   docker exec laravel-app php artisan passport:client --personal
+   docker exec laravel-app php artisan passport:client --personal -n
    ```
 
    Copy the `Client ID` and `Client Secret`, and paste them into the `.env` file.
@@ -77,6 +77,7 @@ docker exec laravel-app php artisan db:seed
 - Client Model
   ```bash
   docker exec laravel-app php artisan scout:import "App\Models\Client"
+  docer exec laravel-app php artisan queue:work --daemon
   ```
 
 ## Known Issues

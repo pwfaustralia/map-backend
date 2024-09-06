@@ -25,7 +25,13 @@ class ClientFactory extends Factory
             'home_phone' => fake()->phoneNumber(),
             'work_phone' => fake()->phoneNumber(),
             'mobile_phone' => fake()->phoneNumber(),
-            'fax' => fake()->phoneNumber()
+            'fax' => fake()->phoneNumber(),
+            'address_1' => fake()->streetAddress(),
+            'address_2' => "",
+            'city' => fake()->city(),
+            'state' => fake()->state(),
+            'country' => fake()->country(),
+            'postcode' => fake()->postcode(),
         ];
     }
 }

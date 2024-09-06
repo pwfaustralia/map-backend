@@ -23,12 +23,8 @@ class UsersSeeder extends Seeder
         $this->command->info('Creating fake client users...');
         // Create fake client users
         User::factory()->count(20000)->create()->each(function ($user) {
-            $physical_address = Address::factory()->create();
-            $postal_address = Address::factory()->create();
             $client = Client::factory()->state([
-                "user_id" => $user->id,
-                "physical_address_id" => $physical_address->id,
-                "postal_address_id" => $postal_address->id
+                "user_id" => $user->id
             ])->create();
             $this->command->info("Client user $user->email created. Client id $client->id, user id $user->id.");
         });
