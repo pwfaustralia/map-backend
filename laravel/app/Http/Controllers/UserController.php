@@ -228,12 +228,14 @@ class UserController extends Controller
 
     public function createOrUpdateUserWithClient(Request $request, $isUpdate = false)
     {
-        $validation = Validator::make($request->all(), [
-            'client_id' => 'required|exists:clients,id'
-        ]);
+        if ($isUpdate) {
+            $validation = Validator::make($request->all(), [
+                'client_id' => 'required|exists:clients,id'
+            ]);
 
-        if ($validation->fails()) {
-            return response($validation->errors(), 202);
+            if ($validation->fails()) {
+                return response($validation->errors(), 202);
+            }
         }
         $cookie = $request->cookie('laravel_access_token');
         $header = $request->header('Authorization');
