@@ -34,7 +34,8 @@ class Client extends Model
         return array_merge($this->toArray(), [
             'id' => (string) $this->id,
             'created_at' => $this->created_at->timestamp,
-            'custom_fields.data' => (string) $this->customFields?->data
+            'custom_fields.data' => (string) $this->customFields?->data,
+            'address_2' => (string) $this->address_2 ?? ""
         ]);
     }
 
