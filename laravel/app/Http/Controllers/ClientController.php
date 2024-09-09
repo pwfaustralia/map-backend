@@ -79,11 +79,12 @@ class ClientController extends Controller
     }
     public function updateClient(Request $request)
     {
-        $validation = Validator::make(['id' => $request->route('id'), ...$request->all()], [
+        $id = $request['client_id'] ?? $request->route('id');
+        $validation = Validator::make(['id' => $id, ...$request->all()], [
             'id' => 'required|exists:clients,id',
             'first_name' => 'max:32|min:2',
             'last_name' => 'max:32|min:2',
-            'email' => ['email', Rule::unique('clients', 'email')->ignore($request->route('id'))],
+            'email' => ['email', Rule::unique('clients', 'email')->ignore($id)],
             'user_id' => ['uuid', new UserExistsRule]
         ]);
 
@@ -91,7 +92,7 @@ class ClientController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $client = Client::with(['user'])->find($request->route('id'));
+        $client = Client::with(['user'])->find($id);
 
         $client->update($request->all());
 

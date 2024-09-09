@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Carbon\Carbon;
+use Exception;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -31,8 +32,13 @@ class UserController extends Controller
 
 
         if ($request['with_client'] === true) {
-            $request['user_id'] = $user->id;
-            return $this->createOrUpdateUserWithClient($request);
+            try {
+                $request['user_id'] = $user->id;
+                return $this->createOrUpdateUserWithClient($request);
+            } catch (Exception $e) {
+                $user->forceDelete();
+                return response()->json(['success' => 0, 'errorMessage' => $e->getMessage()], 500);
+            }
         }
 
         // event(new Registered($user));
@@ -237,23 +243,13 @@ class UserController extends Controller
                 return response($validation->errors(), 202);
             }
         }
-        $cookie = $request->cookie('laravel_access_token');
-        $header = $request->header('Authorization');
-        $access_token = $cookie ? 'Bearer ' . $cookie : $header;
-        $response = Http::withHeaders([
-            'Authorization' => $access_token
-        ])->{$isUpdate ? "put" : "post"}(
-            config('app.url') . '/api/clients/' . $request['client_id'],
-            [
-                ...$request->all(
-                    ['first_name', 'last_name', 'middle_name', 'preferred_name', 'yodlee_username', 'email', 'home_phone', 'work_phone', 'mobile_phone', 'address_1', 'address_2', 'city', 'country', 'state', 'postcode'],
-                ),
-                'user_id' => $request['user_id']
-            ]
-        );
-        $updated_or_created_client = $response->json();
+        if ($isUpdate) {
+            $response = app(ClientController::class)->updateClient($request)->original;
+            return response()->json($response);
+        }
 
-        return response()->json($updated_or_created_client);
+        $response = app(ClientController::class)->createClient($request)->original;
+        return response()->json($response);
     }
 
     public function me()
