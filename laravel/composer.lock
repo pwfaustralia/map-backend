@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8f387e33c4c5211e9cadc0f56ce3b55",
+    "content-hash": "3fc2c755fdff2580aa98e8204711b692",
     "packages": [
         {
             "name": "brick/math",
@@ -505,6 +505,61 @@
                 }
             ],
             "time": "2024-02-05T11:56:58+00:00"
+        },
+        {
+            "name": "doctrine/sql-formatter",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/sql-formatter.git",
+                "reference": "7f83911cc5eba870de7ebb11283972483f7e2891"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/7f83911cc5eba870de7ebb11283972483f7e2891",
+                "reference": "7f83911cc5eba870de7ebb11283972483f7e2891",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^12",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5",
+                "vimeo/psalm": "^5.24"
+            },
+            "bin": [
+                "bin/sql-formatter"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\SqlFormatter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Dorn",
+                    "email": "jeremy@jeremydorn.com",
+                    "homepage": "https://jeremydorn.com/"
+                }
+            ],
+            "description": "a PHP SQL highlighting library",
+            "homepage": "https://github.com/doctrine/sql-formatter/",
+            "keywords": [
+                "highlight",
+                "sql"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/sql-formatter/issues",
+                "source": "https://github.com/doctrine/sql-formatter/tree/1.4.1"
+            },
+            "time": "2024-08-05T20:32:22+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1578,6 +1633,93 @@
                 "source": "https://github.com/laravel/prompts/tree/v0.1.17"
             },
             "time": "2024-03-13T16:05:43+00:00"
+        },
+        {
+            "name": "laravel/pulse",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pulse.git",
+                "reference": "0c0c91fd05acc537f6324b271709670ffc201e59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pulse/zipball/0c0c91fd05acc537f6324b271709670ffc201e59",
+                "reference": "0c0c91fd05acc537f6324b271709670ffc201e59",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/sql-formatter": "^1.4.1",
+                "guzzlehttp/promises": "^1.0|^2.0",
+                "illuminate/auth": "^10.48.4|^11.0.8",
+                "illuminate/cache": "^10.48.4|^11.0.8",
+                "illuminate/config": "^10.48.4|^11.0.8",
+                "illuminate/console": "^10.48.4|^11.0.8",
+                "illuminate/contracts": "^10.48.4|^11.0.8",
+                "illuminate/database": "^10.48.4|^11.0.8",
+                "illuminate/events": "^10.48.4|^11.0.8",
+                "illuminate/http": "^10.48.4|^11.0.8",
+                "illuminate/queue": "^10.48.4|^11.0.8",
+                "illuminate/redis": "^10.48.4|^11.0.8",
+                "illuminate/routing": "^10.48.4|^11.0.8",
+                "illuminate/support": "^10.48.4|^11.0.8",
+                "illuminate/view": "^10.48.4|^11.0.8",
+                "livewire/livewire": "^3.4.9",
+                "nesbot/carbon": "^2.67|^3.0",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0"
+            },
+            "conflict": {
+                "nunomaduro/collision": "<7.7.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.7",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^8.23.1|^9.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.2",
+                "phpstan/phpstan": "^1.11",
+                "predis/predis": "^1.0|^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Pulse\\PulseServiceProvider"
+                    ],
+                    "aliases": {
+                        "Pulse": "Laravel\\Pulse\\Facades\\Pulse"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Pulse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Pulse is a real-time application performance monitoring tool and dashboard for your Laravel application.",
+            "homepage": "https://github.com/laravel/pulse",
+            "keywords": [
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pulse/issues",
+                "source": "https://github.com/laravel/pulse"
+            },
+            "time": "2024-09-03T09:21:52+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -2692,6 +2834,82 @@
                 }
             ],
             "time": "2024-03-23T07:42:40+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v3.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "b158c6386a892efc6c5e4682e682829baac1f933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/b158c6386a892efc6c5e4682e682829baac1f933",
+                "reference": "b158c6386a892efc6c5e4682e682829baac1f933",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/routing": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0",
+                "laravel/prompts": "^0.1.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-15T18:27:32+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7648,6 +7866,66 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "87dafc95c4b234fa681d449bccc1caa040ba50f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/87dafc95c4b234fa681d449bccc1caa040ba50f8",
+                "reference": "87dafc95c4b234fa681d449bccc1caa040ba50f8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0",
+                "illuminate/filesystem": "^11.0",
+                "illuminate/support": "^11.0",
+                "illuminate/validation": "^11.0",
+                "php": "^8.2.0",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2024-09-09T13:51:44+00:00"
         },
         {
             "name": "laravel/pint",
