@@ -1,6 +1,17 @@
 version: '3.8'
 
 services:
+  # Redis
+  redis-cache:
+    image: redis:latest
+    restart: on-failure
+    ports:
+      - "6379:6379"
+    command: redis-server --save 20 1 --loglevel warning
+    volumes:
+      - cache:/data
+    networks:
+      - laravel-net
   # Laravel Application
   laravel:
     build:
@@ -46,17 +57,6 @@ services:
     command: '--data-dir /data --api-key=af08c803-90e4-418d-8736-9211204af5e2 --enable-cors'
     networks:
       - laravel-net
-
-  # redis:
-  #   image: redis/redis-stack:latest
-  #   restart: on-failure
-  #   ports:
-  #     - "6379:6379"
-  #   command: 'redis-server --save 20 1 --loglevel warning --protected-mode no'
-  #   volumes:
-  #     - cache:/data
-  #   networks:
-  #     - laravel-net
 
 networks:
   laravel-net:

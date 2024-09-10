@@ -50,8 +50,8 @@ class AppServiceProvider extends ServiceProvider
                 ->action('Verify Email Address', $url);
         });
 
-        Gate::define('viewPulse', function (User $user) {
-            return $user->isAdmin();
-        });
+        // Gate::define('viewPulse', function (User $user) {
+        //     return $user->isAdmin();
+        // });
     }
 }

@@ -7,6 +7,7 @@ LABEL maintainer="er.avinashrathod@gmail.com"
 
 # Install system dependencies.
 RUN apt-get update && apt-get install -y \
+    supervisor \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
@@ -21,12 +22,15 @@ RUN a2enmod rewrite
 # Set the Apache document root
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 
+# Update the default Supervisor configuration
+COPY horizon.conf /etc/supervisor/conf.d/horizon.conf
+
 # Update the default Apache site configuration
 COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
 
 # Install PHP extensions.
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j$(nproc) gd pdo pdo_mysql
+    && docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl
 
 # Install Composer globally.
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
