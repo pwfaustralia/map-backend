@@ -50,8 +50,17 @@ class AppServiceProvider extends ServiceProvider
                 ->action('Verify Email Address', $url);
         });
 
+
+        // TO DO: Implement authentication for laravel/pulse and laravel/horizon webui.
+
         // Gate::define('viewPulse', function (User $user) {
         //     return $user->isAdmin();
+        // });
+
+        // Gate::define('viewHorizon', function (User $user) {
+        //     return in_array($user->email, [
+        //         'taylor@laravel.com',
+        //     ]);
         // });
     }
 }

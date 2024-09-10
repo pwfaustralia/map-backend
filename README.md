@@ -80,6 +80,15 @@ docker exec laravel-app php artisan db:seed
   docker exec laravel-app php artisan queue:work --daemon
   ```
 
+13. Running Supervisor processes:
+
+```bash
+supervisorctl reread
+supervisorctl update
+supervisorctl start all
+supervisorctl status
+```
+
 ## Known Issues
 
 [Typesense `scout:import` issue](https://github.com/laravel/scout/issues/822)
