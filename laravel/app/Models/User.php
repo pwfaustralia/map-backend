@@ -60,4 +60,9 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(Client::class);
     }
+
+    public function accounts()
+    {
+        return $this->hasManyThrough(Account::class, Client::class, 'user_id', 'client_id', 'account_id', 'id');
+    }
 }

@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\VerifyEmailController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -10,23 +14,34 @@ Route::middleware(['cookie-auth', 'auth:api'])->post('/users/logout', 'App\Http\
 
 // Users
 Route::prefix('/users')->middleware(['cookie-auth', 'auth:api'])->group(function () {
-    Route::get('/me', 'App\Http\Controllers\UserController@me');
-    Route::get('/checkup', 'App\Http\Controllers\UserController@access_checkup');
-    Route::post('/', 'App\Http\Controllers\UserController@register')->middleware('scope:create-users');
-    Route::put('/{id}', 'App\Http\Controllers\UserController@updateUser')->middleware('scope:update-users');
-    Route::get('/', 'App\Http\Controllers\UserController@listUsers')->middleware('scope:view-all-users');
-    Route::get('/{id}', 'App\Http\Controllers\UserController@getUser')->middleware('scope:view-users');
-    Route::delete('/{id}', 'App\Http\Controllers\UserController@deleteUser')->middleware('scope:delete-users');
-    Route::get('/{id}/yodlee', 'App\Http\Controllers\UserController@getUserYodleeAccessTokensWithHeader')->middleware('scope:view-users');
+    Route::get('/me', [UserController::class, 'me']);
+    Route::get('/checkup', [UserController::class, 'access_checkup']);
+    Route::post('/', [UserController::class, 'register'])->middleware('scope:create-users');
+    Route::put('/{id}', [UserController::class, 'updateUser'])->middleware('scope:update-users');
+    Route::get('/', [UserController::class, 'listUsers'])->middleware('scope:view-all-users');
+    Route::get('/{id}', [UserController::class, 'getUser'])->middleware('scope:view-users');
+    Route::delete('/{id}', [UserController::class, 'deleteUser'])->middleware('scope:delete-users');
+    Route::get('/{id}/yodlee', [UserController::class, 'getUserYodleeAccessTokensWithHeader'])->middleware('scope:view-users');
 });
 
 // Clients
 Route::prefix('clients')->middleware(['cookie-auth', 'auth:api'])->group(function () {
-    Route::post('/', 'App\Http\Controllers\ClientController@createClient')->middleware('scope:create-clients');
-    Route::put('/{id}', 'App\Http\Controllers\ClientController@updateClient')->middleware('scope:update-clients');
-    Route::get('/', 'App\Http\Controllers\ClientController@listClients')->middleware('scope:view-all-clients');
-    Route::get('/{id}', 'App\Http\Controllers\ClientController@getClient')->middleware('scope:view-clients');
-    Route::delete('/{id}', 'App\Http\Controllers\ClientController@deleteClient')->middleware('scope:delete-clients');
+    Route::post('/', [ClientController::class, 'createClient'])->middleware('scope:create-clients');
+    Route::put('/{id}', [ClientController::class, 'updateClient'])->middleware('scope:update-clients');
+    Route::get('/', [ClientController::class, 'listClients'])->middleware('scope:view-all-clients');
+    Route::get('/{id}', [ClientController::class, 'getClient'])->middleware('scope:view-clients');
+    Route::delete('/{id}', [ClientController::class, 'deleteClient'])->middleware('scope:delete-clients');
+    Route::get('/{id}/yodlee', [ClientController::class, 'getUserYodleeAccessTokenWithHeader'])->middleware('scope:view-clients');
+});
+
+// Transactions
+Route::prefix('transactions')->middleware(['cookie-auth', 'auth:api'])->group(function () {
+    Route::get('/import', [TransactionController::class, 'import'])->middleware('scope:import-transactions');
+});
+
+// Accounts
+Route::prefix('accounts')->middleware(['cookie-auth', 'auth:api'])->group(function () {
+    Route::put('/assign', [AccountController::class, 'assignToClient'])->middleware('scope:update-accounts');
 });
 
 // Verify email

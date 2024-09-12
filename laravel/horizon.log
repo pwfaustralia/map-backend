@@ -1,6 +1,8203 @@
+  2024-09-11 20:58:11 App\Jobs\ImportTransactions .................... RUNNING
+Testing  2024-09-11 20:58:11 App\Jobs\ImportTransactions ................ 5.61ms DONE
+  2024-09-11 20:59:53 App\Jobs\ImportTransactions .................... RUNNING
+Testing  2024-09-11 20:59:53 App\Jobs\ImportTransactions ................ 5.91ms DONE
+  2024-09-11 21:02:14 App\Jobs\ImportTransactions .................... RUNNING
+Testing  2024-09-11 21:02:14 App\Jobs\ImportTransactions ................ 4.69ms DONE
 
    INFO  Horizon started successfully.  
 
+
+   INFO  Horizon started successfully.  
+
+  2024-09-11 21:29:04 App\Jobs\ImportTransactions .................... RUNNING
+asdasdasd  2024-09-11 21:29:04 App\Jobs\ImportTransactions .............. 138.79ms DONE
+  2024-09-11 21:29:44 App\Jobs\ImportTransactions .................... RUNNING
+array(3) {
+  ["errorCode"]=>
+  string(4) "Y008"
+  ["errorMessage"]=>
+  string(37) "Invalid token in authorization header"
+  ["referenceCode"]=>
+  string(44) "1eadcadb-fada-40e4-90fc-74e6657316d715509347"
+}
+  2024-09-11 21:29:45 App\Jobs\ImportTransactions .................... 1s DONE
+  2024-09-11 21:30:06 App\Jobs\ImportTransactions .................... RUNNING
+array(3) {
+  ["errorCode"]=>
+  string(4) "Y008"
+  ["errorMessage"]=>
+  string(37) "Invalid token in authorization header"
+  ["referenceCode"]=>
+  string(44) "1eadcadb-fada-40e4-90fc-74e6657316d715510815"
+}
+  2024-09-11 21:30:07 App\Jobs\ImportTransactions .............. 356.22ms DONE
+  2024-09-11 21:31:32 App\Jobs\ImportTransactions .................... RUNNING
+array(1) {
+  ["transaction"]=>
+  array(70) {
+    [0]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837488)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [1]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837487)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [2]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837486)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [3]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837485)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [4]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726066)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [5]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726065)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [6]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726016)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [7]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726015)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [8]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636860)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [9]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636859)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [10]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636858)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [11]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636857)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [12]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545716)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [13]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545715)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [14]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545714)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [15]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545713)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [16]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384774)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [17]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384773)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [18]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384772)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [19]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384771)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [20]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357212)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [21]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357211)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [22]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357210)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [23]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357209)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [24]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192731)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [25]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192730)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [26]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192729)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [27]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192728)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [28]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124941)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [29]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124940)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [30]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124681)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [31]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124680)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [32]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889786)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [33]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889785)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [34]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889784)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [35]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889783)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [36]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813371)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [37]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813370)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [38]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813369)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [39]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813368)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [40]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93704686)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [41]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93704685)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [42]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93703845)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [43]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93703844)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [44]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625865)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [45]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625864)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [46]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625863)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [47]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625862)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [48]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521740)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [49]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521739)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [50]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521647)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [51]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521646)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [52]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306842)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [53]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306841)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [54]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306440)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [55]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306439)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [56]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212137)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [57]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212136)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [58]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212135)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [59]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212134)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [60]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105662)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [61]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105661)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [62]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105652)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [63]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105651)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [64]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92665648)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-22"
+      ["transactionDate"]=>
+      string(10) "2024-08-22"
+      ["postDate"]=>
+      string(10) "2024-08-22"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265979)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [65]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92665646)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-22"
+      ["transactionDate"]=>
+      string(10) "2024-08-22"
+      ["postDate"]=>
+      string(10) "2024-08-22"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265978)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [66]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567643)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265979)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [67]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567642)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(230.5)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(6) "CREDIT"
+      ["categoryType"]=>
+      string(6) "INCOME"
+      ["categoryId"]=>
+      int(29)
+      ["category"]=>
+      string(21) "Salary/Regular Income"
+      ["detailCategoryId"]=>
+      int(1183)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000012)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(16) "Paychecks/Salary"
+        ["simple"]=>
+        string(16) "Paychecks/Salary"
+      }
+      ["type"]=>
+      string(16) "DEPOSITS_CREDITS"
+      ["subType"]=>
+      string(21) "DIRECT_DEPOSIT_SALARY"
+      ["isPhysical"]=>
+      bool(false)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265979)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(230.5)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [68]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567633)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265978)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [69]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567632)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(6) "CREDIT"
+      ["categoryType"]=>
+      string(6) "INCOME"
+      ["categoryId"]=>
+      int(29)
+      ["category"]=>
+      string(21) "Salary/Regular Income"
+      ["detailCategoryId"]=>
+      int(1183)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000012)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(16) "Paychecks/Salary"
+        ["simple"]=>
+        string(16) "Paychecks/Salary"
+      }
+      ["type"]=>
+      string(16) "DEPOSITS_CREDITS"
+      ["subType"]=>
+      string(21) "DIRECT_DEPOSIT_SALARY"
+      ["isPhysical"]=>
+      bool(false)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265978)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+  }
+}
+  2024-09-11 21:31:34 App\Jobs\ImportTransactions .................... 2s DONE
+  2024-09-11 21:31:49 App\Jobs\ImportTransactions .................... RUNNING
+array(1) {
+  ["transaction"]=>
+  array(70) {
+    [0]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837488)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [1]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837487)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:51Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [2]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837486)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [3]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94837485)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-11T05:19:49Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-09"
+      ["transactionDate"]=>
+      string(10) "2024-09-09"
+      ["postDate"]=>
+      string(10) "2024-09-09"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [4]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726066)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [5]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726065)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [6]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726016)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [7]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94726015)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T22:54:13Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-08"
+      ["transactionDate"]=>
+      string(10) "2024-09-08"
+      ["postDate"]=>
+      string(10) "2024-09-08"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [8]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636860)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [9]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636859)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:06Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [10]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636858)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [11]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94636857)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-09T01:22:04Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-07"
+      ["transactionDate"]=>
+      string(10) "2024-09-07"
+      ["postDate"]=>
+      string(10) "2024-09-07"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [12]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545716)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [13]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545715)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:14Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [14]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545714)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [15]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94545713)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-08T02:00:12Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-06"
+      ["transactionDate"]=>
+      string(10) "2024-09-06"
+      ["postDate"]=>
+      string(10) "2024-09-06"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [16]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384774)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [17]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384773)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:11Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [18]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384772)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [19]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94384771)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T10:05:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-05"
+      ["transactionDate"]=>
+      string(10) "2024-09-05"
+      ["postDate"]=>
+      string(10) "2024-09-05"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [20]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357212)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [21]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357211)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:50Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [22]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357210)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [23]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94357209)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-06T02:55:48Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-04"
+      ["transactionDate"]=>
+      string(10) "2024-09-04"
+      ["postDate"]=>
+      string(10) "2024-09-04"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [24]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192731)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [25]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192730)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [26]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192729)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [27]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94192728)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T21:04:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-03"
+      ["transactionDate"]=>
+      string(10) "2024-09-03"
+      ["postDate"]=>
+      string(10) "2024-09-03"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [28]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124941)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [29]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124940)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [30]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124681)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [31]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(94124680)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-04T06:34:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-02"
+      ["transactionDate"]=>
+      string(10) "2024-09-02"
+      ["postDate"]=>
+      string(10) "2024-09-02"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [32]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889786)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [33]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889785)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:37Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [34]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889784)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [35]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93889783)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-02T11:17:35Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-09-01"
+      ["transactionDate"]=>
+      string(10) "2024-09-01"
+      ["postDate"]=>
+      string(10) "2024-09-01"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [36]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813371)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [37]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813370)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:27Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [38]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813369)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [39]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93813368)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-09-01T21:39:25Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-31"
+      ["transactionDate"]=>
+      string(10) "2024-08-31"
+      ["postDate"]=>
+      string(10) "2024-08-31"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [40]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93704686)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [41]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93704685)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [42]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93703845)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [43]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93703844)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T21:47:20Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-30"
+      ["transactionDate"]=>
+      string(10) "2024-08-30"
+      ["postDate"]=>
+      string(10) "2024-08-30"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [44]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625865)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [45]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625864)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:23Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [46]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625863)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [47]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93625862)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-31T02:34:22Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-29"
+      ["transactionDate"]=>
+      string(10) "2024-08-29"
+      ["postDate"]=>
+      string(10) "2024-08-29"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [48]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521740)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [49]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521739)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [50]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521647)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [51]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93521646)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-30T06:19:26Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-28"
+      ["transactionDate"]=>
+      string(10) "2024-08-28"
+      ["postDate"]=>
+      string(10) "2024-08-28"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [52]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306842)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [53]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306841)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:29Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [54]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306440)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [55]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93306439)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-28T09:46:31Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-27"
+      ["transactionDate"]=>
+      string(10) "2024-08-27"
+      ["postDate"]=>
+      string(10) "2024-08-27"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [56]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212137)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [57]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212136)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:30Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [58]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212135)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [59]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93212134)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-27T17:16:28Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-26"
+      ["transactionDate"]=>
+      string(10) "2024-08-26"
+      ["postDate"]=>
+      string(10) "2024-08-26"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [60]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105662)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(35) "CHEROKEE NATION TAX TA TAHLEQUAH OK"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(480.66)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [61]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105661)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(678.58)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:09Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(32) "ATT*BILL PAYMENT XXX-XXX-0500 TX"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176106)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1159.24)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [62]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105652)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(51) "8 TO XX XXXXX0001 LOMBARD IL XXXXXXXXXXX XXXXXX8501"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1105.84)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [63]=>
+    array(20) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(93105651)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(21.99)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["categoryType"]=>
+      string(12) "UNCATEGORIZE"
+      ["categoryId"]=>
+      int(1)
+      ["category"]=>
+      string(13) "Uncategorised"
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000017)
+      ["createdDate"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-26T17:48:07Z"
+      ["description"]=>
+      array(1) {
+        ["original"]=>
+        string(31) "BEEHIVE STORAGE LC BOUNTIFUL UT"
+      }
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-25"
+      ["transactionDate"]=>
+      string(10) "2024-08-25"
+      ["postDate"]=>
+      string(10) "2024-08-25"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11176105)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(1083.85)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(3) "998"
+    }
+    [64]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92665648)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-22"
+      ["transactionDate"]=>
+      string(10) "2024-08-22"
+      ["postDate"]=>
+      string(10) "2024-08-22"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265979)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [65]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92665646)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-22T15:00:25Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-22"
+      ["transactionDate"]=>
+      string(10) "2024-08-22"
+      ["postDate"]=>
+      string(10) "2024-08-22"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265978)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [66]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567643)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265979)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [67]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567642)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(230.5)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(6) "CREDIT"
+      ["categoryType"]=>
+      string(6) "INCOME"
+      ["categoryId"]=>
+      int(29)
+      ["category"]=>
+      string(21) "Salary/Regular Income"
+      ["detailCategoryId"]=>
+      int(1183)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000012)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(16) "Paychecks/Salary"
+        ["simple"]=>
+        string(16) "Paychecks/Salary"
+      }
+      ["type"]=>
+      string(16) "DEPOSITS_CREDITS"
+      ["subType"]=>
+      string(21) "DIRECT_DEPOSIT_SALARY"
+      ["isPhysical"]=>
+      bool(false)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265979)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(230.5)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [68]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567633)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(5) "DEBIT"
+      ["categoryType"]=>
+      string(7) "EXPENSE"
+      ["categoryId"]=>
+      int(25)
+      ["category"]=>
+      string(19) "ATM/Cash Withdrawal"
+      ["detailCategoryId"]=>
+      int(1138)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000009)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(14) "ATM Withdrawal"
+        ["simple"]=>
+        string(14) "ATM Withdrawal"
+      }
+      ["type"]=>
+      string(10) "WITHDRAWAL"
+      ["subType"]=>
+      string(19) "ATM_CASH_WITHDRAWAL"
+      ["isPhysical"]=>
+      bool(true)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265978)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+    [69]=>
+    array(27) {
+      ["CONTAINER"]=>
+      string(4) "bank"
+      ["id"]=>
+      int(92567632)
+      ["amount"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["baseType"]=>
+      string(6) "CREDIT"
+      ["categoryType"]=>
+      string(6) "INCOME"
+      ["categoryId"]=>
+      int(29)
+      ["category"]=>
+      string(21) "Salary/Regular Income"
+      ["detailCategoryId"]=>
+      int(1183)
+      ["categorySource"]=>
+      string(6) "SYSTEM"
+      ["highLevelCategoryId"]=>
+      int(10000012)
+      ["createdDate"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["lastUpdated"]=>
+      string(20) "2024-08-21T18:20:10Z"
+      ["description"]=>
+      array(2) {
+        ["original"]=>
+        string(16) "Paychecks/Salary"
+        ["simple"]=>
+        string(16) "Paychecks/Salary"
+      }
+      ["type"]=>
+      string(16) "DEPOSITS_CREDITS"
+      ["subType"]=>
+      string(21) "DIRECT_DEPOSIT_SALARY"
+      ["isPhysical"]=>
+      bool(false)
+      ["merchantType"]=>
+      string(6) "OTHERS"
+      ["isManual"]=>
+      bool(false)
+      ["sourceType"]=>
+      string(10) "AGGREGATED"
+      ["date"]=>
+      string(10) "2024-08-21"
+      ["transactionDate"]=>
+      string(10) "2024-08-21"
+      ["postDate"]=>
+      string(10) "2024-08-21"
+      ["status"]=>
+      string(6) "POSTED"
+      ["accountId"]=>
+      int(11265978)
+      ["runningBalance"]=>
+      array(2) {
+        ["amount"]=>
+        float(239.3)
+        ["currency"]=>
+        string(3) "USD"
+      }
+      ["checkNumber"]=>
+      string(7) "DAG-333"
+      ["merchant"]=>
+      array(3) {
+        ["id"]=>
+        string(8) "15549109"
+        ["source"]=>
+        string(6) "YODLEE"
+        ["address"]=>
+        array(1) {
+          ["country"]=>
+          string(2) "US"
+        }
+      }
+    }
+  }
+}
+  2024-09-11 21:31:50 App\Jobs\ImportTransactions .............. 864.48ms DONE
 
    INFO  Horizon started successfully.  
 

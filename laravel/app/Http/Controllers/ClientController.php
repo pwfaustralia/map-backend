@@ -37,7 +37,7 @@ class ClientController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $client = Client::with(['user'])->find($request->route('id'));
+        $client = Client::with(['user'])->withCount('accounts')->find($request->route('id'));
 
         return response($client, 200);
     }
@@ -97,5 +97,49 @@ class ClientController extends Controller
         $client->update($request->all());
 
         return response($client, 200);
+    }
+
+    public function getUserYodleeAccessTokenWithHeader(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id')], [
+            'id' => 'required|exists:clients,id'
+        ]);
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+        $client = Client::find($request->route('id'));
+        $yodlee_acess_token = $this->getYodleeAccessToken($request['username'] ?? $client->yodlee_username);
+        return response()->json($yodlee_acess_token, 200);
+    }
+
+    public function getYodleeAccessToken($yodlee_username)
+    {
+        $error = null;
+        $token = [];
+
+        try {
+            $client = new \GuzzleHttp\Client();
+            $yodlee_url = config('app.env') == 'production' ? config('app.yodlee_prod_url') : config('app.yodlee_sandbox_url');
+            $response = $client->request('POST', $yodlee_url . '/auth/token', [
+                'headers' => [
+                    'Api-Version' => '1.1',
+                    'loginName' => $yodlee_username,
+                    'Content-Type' => 'application/x-www-form-urlencoded'
+                ],
+                'form_params' => [
+                    'clientId' => config('app.yodlee_client_id'),
+                    'secret' => config('app.yodlee_client_secret')
+                ]
+            ]);
+            $resp = json_decode($response->getBody());
+            $resp->username = $yodlee_username;
+            $token = $resp;
+        } catch (\GuzzleHttp\Exception\ClientException $e) {
+            $response = $e->getResponse();
+            $error = json_decode($response->getBody());
+            $token['error'] = $error;
+        }
+
+        return $token;
     }
 }

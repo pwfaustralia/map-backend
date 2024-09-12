@@ -24,7 +24,6 @@ ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 
 # Update the default Supervisor configuration
 COPY horizon.conf /etc/supervisor/conf.d/horizon.conf
-COPY laravel-worker.conf /etc/supervisor/conf.d/laravel-worker.conf
 
 # Update the default Apache site configuration
 COPY apache-config.conf /etc/apache2/sites-available/000-default.conf

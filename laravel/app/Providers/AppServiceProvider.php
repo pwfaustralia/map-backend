@@ -38,6 +38,15 @@ class AppServiceProvider extends ServiceProvider
             'view-all-clients' => 'View all Clients',
             'view-all-users' => 'View all Users',
             'default-scope' => 'Default scope for new Users',
+            'create-transactions' => 'Create Transactions',
+            'update-transactions' => 'Update Transactions',
+            'view-transactions' => 'View Transactions',
+            'delete-transactions' => 'Delete Transactions',
+            'import-transactions' => 'Import Transactions',
+            'create-accounts' => 'Create Accounts',
+            'update-accounts' => 'Update Accounts',
+            'view-accounts' => 'View Accounts',
+            'delete-accounts' => 'Delete Accounts',
         ]);
         Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
         Passport::enablePasswordGrant();
@@ -57,10 +66,8 @@ class AppServiceProvider extends ServiceProvider
         //     return $user->isAdmin();
         // });
 
-        // Gate::define('viewHorizon', function (User $user) {
-        //     return in_array($user->email, [
-        //         'taylor@laravel.com',
-        //     ]);
-        // });
+        Gate::define('viewHorizon', function (User $user) {
+            return true;
+        });
     }
 }

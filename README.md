@@ -83,6 +83,7 @@ docker exec laravel-app php artisan db:seed
 13. Running Supervisor processes:
 
 ```bash
+supervisord -c /etc/supervisor/supervisord.conf
 supervisorctl reread
 supervisorctl update
 supervisorctl start all

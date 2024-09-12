@@ -175,7 +175,7 @@ class UserController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $user = User::with(['userRole', 'clients'])->find($request->route('id'));
+        $user = User::with(['userRole', 'clients'])->withCount('accounts')->find($request->route('id'));
 
         return response($user, 200);
     }
