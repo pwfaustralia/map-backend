@@ -26,6 +26,6 @@ class TransactionController extends Controller
             return response($validation->errors(), 202);
         }
 
-        return to_snake($account->toArray());
+        return camelToSnakeCaseArray($account->toArray());
     }
 }

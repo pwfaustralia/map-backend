@@ -1,13 +1,18 @@
 <?php
 
-use Illuminate\Support\Str;
-
-if (! function_exists('to_snake')) {
-    function to_snake($array)
+if (! function_exists('camelToSnakeCaseArray')) {
+    function camelToSnakeCaseArray(array $array): array
     {
-        return array_reduce(array_flip($array), function ($carry, $item) use ($array) {
-            $carry[Str::snake($item)] = $array[$item];
-            return $carry;
-        }, []);
+        $convertedArray = [];
+
+        foreach ($array as $key => $value) {
+            // Convert camelCase to snake_case using a regex
+            $snakeKey = strtolower(preg_replace('/([a-z])([A-Z])/', '$1_$2', $key));
+
+            // Assign the value to the new key
+            $convertedArray[$snakeKey] = $value;
+        }
+
+        return $convertedArray;
     }
 }

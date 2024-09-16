@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   # Redis
-  redis-cache:
-    image: redis:latest
+  redis:
+    image: redis:alpine
     restart: on-failure
     ports:
       - "6379:6379"
     command: redis-server --save 20 1 --loglevel warning
     volumes:
-      - cache:/data
+      - ./redis-data:/data
     networks:
       - laravel-net
   # Laravel Application
