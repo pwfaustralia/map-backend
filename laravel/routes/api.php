@@ -32,11 +32,12 @@ Route::prefix('clients')->middleware(['cookie-auth', 'auth:api'])->group(functio
     Route::get('/{id}', [ClientController::class, 'getClient'])->middleware('scope:view-clients');
     Route::delete('/{id}', [ClientController::class, 'deleteClient'])->middleware('scope:delete-clients');
     Route::get('/{id}/yodlee', [ClientController::class, 'getUserYodleeAccessTokenWithHeader'])->middleware('scope:view-clients');
+    Route::get('/{id}/yodlee/status', [ClientController::class, 'getYodleeStatus'])->middleware('scope:view-clients');
 });
 
 // Transactions
 Route::prefix('transactions')->middleware(['cookie-auth', 'auth:api'])->group(function () {
-    Route::get('/import', [TransactionController::class, 'import'])->middleware('scope:import-transactions');
+    Route::post('/import', [TransactionController::class, 'importAccountTransactions'])->middleware('scope:import-transactions');
 });
 
 // Accounts

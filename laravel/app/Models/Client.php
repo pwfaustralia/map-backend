@@ -29,6 +29,11 @@ class Client extends Model
         return $this->hasMany(Account::class);
     }
 
+    public function transactions()
+    {
+        return $this->hasManyThrough(Transaction::class, Account::class, 'client_id', 'account_id', 'id', 'account_id');
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class);

@@ -11,7 +11,7 @@ class Account extends Model
 {
     use HasFactory, HasUuids, SoftDeletes;
 
-    protected $fillable = ['account_id', 'client_id', 'created_date', 'last_updated'];
+    protected $fillable = ['account_id', 'client_id', 'created_date', 'last_updated', 'batch_id'];
 
     public function transactions()
     {

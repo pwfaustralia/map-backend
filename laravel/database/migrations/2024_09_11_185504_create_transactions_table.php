@@ -34,6 +34,7 @@ return new class extends Migration
             $table->unsignedBigInteger('account_id');
             $table->decimal('running_balance', 15, 2)->nullable();
             $table->string('check_number')->nullable();
+            $table->uuid('batch_id')->nullable();
 
             $table->timestamps();
         });

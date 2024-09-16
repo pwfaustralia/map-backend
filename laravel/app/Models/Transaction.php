@@ -32,6 +32,7 @@ class Transaction extends Model
         'account_id',
         'running_balance',
         'check_number',
+        'batch_id'
     ];
 
     public function account()

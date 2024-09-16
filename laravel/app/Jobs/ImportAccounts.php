@@ -2,12 +2,12 @@
 
 namespace App\Jobs;
 
-use App\Models\Transaction;
+use App\Models\Account;
 use Illuminate\Bus\Batchable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 
-class ImportTransaction implements ShouldQueue
+class ImportAccounts implements ShouldQueue
 {
     use Batchable, Queueable;
 
@@ -20,6 +20,6 @@ class ImportTransaction implements ShouldQueue
 
     public function handle(): void
     {
-        Transaction::create($this->data);
+        Account::create($this->data);
     }
 }

@@ -19,14 +19,15 @@ class ClientController extends Controller
             'yodlee_username' => 'required',
             'user_id' => ['required', 'uuid', new UserExistsRule]
         ]);
-
         if ($validation->fails()) {
             return response($validation->errors(), 202);
         }
+
         $client = Client::create(request()->all());
 
         return response()->json($client);
     }
+
     public function getClient(Request $request)
     {
         $validation = Validator::make(['id' => $request->route('id')], [
@@ -37,7 +38,7 @@ class ClientController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $client = Client::with(['user'])->withCount('accounts')->find($request->route('id'));
+        $client = Client::with(['user'])->withCount(['accounts', 'transactions'])->find($request->route('id'));
 
         return response($client, 200);
     }
@@ -141,5 +142,18 @@ class ClientController extends Controller
         }
 
         return $token;
+    }
+
+    public function getYodleeStatus(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id')], [
+            'id' => 'required|exists:clients,id'
+        ]);
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+        $client = Client::where("id", $request->route('id'))->first(['yodlee_status']);
+
+        return response()->json($client);
     }
 }
