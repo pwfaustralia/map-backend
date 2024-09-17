@@ -9,31 +9,37 @@
 2. Run docker compose and accessing laravel-app terminal:
    ```bash
    docker-compose up -d
-   docker exec -it laravel-app sh
-   /bin/bash
+   docker exec -it laravel-app /bin/bash
    ```
+   
+3. Set up the environment file:
 
-3. Install Composer dependencies:
+   ```bash
+   cp .env.example .env
+   ```
+   > [!IMPORTANT] 
+   > Replace variables with "xxx" values with correct ones.
+   
+4. Install Composer dependencies:
    ```bash
    composer install
    ```
+   - If compose install gives you an error, try installing some PHP extensions by running:
+      ```bash
+      docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl
+      ```
+   - Run `composer install` again.
 
-4. Run the database migrations:
+5. Run the database migrations:
 
    ```bash
    php artisan migrate --force
    ```
 
-5. Generate Passport keys:
+6. Generate Passport keys:
 
    ```bash
    php artisan passport:keys
-   ```
-
-6. Set up the environment file:
-
-   ```bash
-   cp laravel/.env.example laravel/.env
    ```
 
 7. Retrieve and configure OAuth keys:
@@ -66,13 +72,13 @@
 chown -R www-data:www-data ./storage
 ```
 
-11. Seed the database:
+10. Seed the database:
 
 ```bash
 php artisan db:seed
 ```
 
-12. Running Supervisor processes:
+11. Running Supervisor processes:
 
 ```bash
 supervisord -c /etc/supervisor/supervisord.conf
@@ -81,7 +87,7 @@ supervisorctl update
 supervisorctl start all
 supervisorctl status
 ```
-13. Importing Typesense collections:
+12. Importing Typesense collections:
 
 - Client Model
   ```bash
