@@ -18,7 +18,10 @@ class TransactionController extends Controller
             'yodlee_username' => 'required'
         ]);
         if ($validation->fails()) {
-            return response($validation->errors(), 202);
+            return response([
+                "success" => false,
+                "message" => $validation->errors()->first()
+            ], 202);
         }
         try {
             $client = Client::find($request['client_id']);
