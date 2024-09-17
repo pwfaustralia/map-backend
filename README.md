@@ -17,8 +17,8 @@
    ```bash
    cp .env.example .env
    ```
-   > [!IMPORTANT]
-   > Replace variables with "xxx" values with correct ones.
+> [!IMPORTANT]
+> Replace variables with "xxx" values with correct ones.
    
 4. Install Composer and PHP dependencies:
    ```bash
