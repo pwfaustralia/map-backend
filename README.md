@@ -5,32 +5,38 @@
    git clone https://github.com/pwfaustralia/map-backend
    cd map-backend
    ```
-2. Install Composer dependencies:
-
+   
+2. Run docker compose and accessing laravel-app terminal:
    ```bash
-   docker exec laravel-app composer install
+   docker-compose up -d
+   docker exec -it laravel-app sh
+   /bin/bash
    ```
 
-3. Run the database migrations:
-
+3. Install Composer dependencies:
    ```bash
-   docker exec laravel-app php artisan migrate --force
+   composer install
    ```
 
-4. Generate Passport keys:
+4. Run the database migrations:
 
    ```bash
-   docker exec laravel-app php artisan passport:keys
+   php artisan migrate --force
    ```
 
-5. Set up the environment file:
+5. Generate Passport keys:
 
    ```bash
-   cd laravel
-   cp .env.example .env
+   php artisan passport:keys
    ```
 
-6. Retrieve and configure OAuth keys:
+6. Set up the environment file:
+
+   ```bash
+   cp laravel/.env.example laravel/.env
+   ```
+
+7. Retrieve and configure OAuth keys:
 
    - View the private key:
 
@@ -46,13 +52,7 @@
      ```
      Copy the entire public key and paste it into the `.env` file.
 
-7. Re-run the database migrations:
-
-   ```bash
-   docker exec laravel-app php artisan migrate
-   ```
-
-8. Create a personal access client for Laravel Passport:
+8.  Create a personal access client for Laravel Passport:
 
    ```bash
    docker exec laravel-app php artisan passport:client --personal -n
@@ -60,27 +60,19 @@
 
    Copy the `Client ID` and `Client Secret`, and paste them into the `.env` file.
 
-9. Set correct ownership of the storage directory:
+9.  Set correct ownership of the storage directory:
 
 ```bash
-docker exec laravel-app chown -R www-data:www-data ./storage
+chown -R www-data:www-data ./storage
 ```
 
 11. Seed the database:
 
 ```bash
-docker exec laravel-app php artisan db:seed
+php artisan db:seed
 ```
 
-12. Importing Typesense collections:
-
-- Client Model
-  ```bash
-  docker exec laravel-app php artisan scout:import "App\Models\Client"
-  docker exec laravel-app php artisan queue:work --daemon
-  ```
-
-13. Running Supervisor processes:
+12. Running Supervisor processes:
 
 ```bash
 supervisord -c /etc/supervisor/supervisord.conf
@@ -89,6 +81,12 @@ supervisorctl update
 supervisorctl start all
 supervisorctl status
 ```
+13. Importing Typesense collections:
+
+- Client Model
+  ```bash
+  php artisan scout:import "App\Models\Client"
+  ```
 
 ## Known Issues
 

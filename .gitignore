@@ -4,6 +4,7 @@ laravel/*.log
 .env
 redis-data
 
+/laravel/app/secrets/oauth/*.key
 /laravel/.phpunit.cache
 /laravel/node_modules
 /laravel/public/build
@@ -21,5 +22,4 @@ redis-data
 /laravel/.fleet
 /laravel/.idea
 /laravel/.vscode
-/laravelapp/secrets/oauth/*.key
 /laravel/*.log
