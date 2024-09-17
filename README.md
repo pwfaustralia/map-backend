@@ -20,20 +20,16 @@
    > [!IMPORTANT]
    > Replace variables with "xxx" values with correct ones.
    
-4. Install Composer dependencies:
+4. Install Composer and PHP dependencies:
    ```bash
    composer install
+   docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl
    ```
-   - If compose install gives you an error, try installing some PHP extensions by running:
-      ```bash
-      docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl
-      ```
-   - Run `composer install` again.
 
 5. Run the database migrations:
 
    ```bash
-   php artisan migrate --force
+   php artisan migrate
    ```
 
 6. Generate Passport keys:
