@@ -17,7 +17,7 @@
    ```bash
    cp .env.example .env
    ```
-   > [!IMPORTANT] 
+   > [!IMPORTANT]
    > Replace variables with "xxx" values with correct ones.
    
 4. Install Composer dependencies:
