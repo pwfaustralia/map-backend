@@ -33,10 +33,13 @@ class UserController extends Controller
         if ($request['with_client'] === true) {
             try {
                 $request['user_id'] = $user->id;
+                $callback = null;
                 if ($request['notify_email']) {
-                    event(new Registered($user));
+                    $callback = function () use ($user) {
+                        event(new Registered($user));
+                    };
                 }
-                return $this->createOrUpdateUserWithClient($request);
+                return $this->createOrUpdateUserWithClient($request, false, $callback);
             } catch (Exception $e) {
                 $user->forceDelete();
                 return response()->json(['success' => 0, 'errorMessage' => $e->getMessage()], 500);
@@ -220,7 +223,7 @@ class UserController extends Controller
         return response($user, 200);
     }
 
-    public function createOrUpdateUserWithClient(Request $request, $isUpdate = false)
+    public function createOrUpdateUserWithClient(Request $request, $isUpdate = false, $callback = null)
     {
         if ($isUpdate) {
             $validation = Validator::make($request->all(), [
@@ -236,6 +239,9 @@ class UserController extends Controller
             return response()->json($response);
         }
 
+        if ($callback !== null) {
+            $callback();
+        }
         $response = app(ClientController::class)->createClient($request)->original;
         return response()->json($response);
     }
