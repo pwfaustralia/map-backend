@@ -65,4 +65,9 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasManyThrough(Account::class, Client::class, 'user_id', 'client_id', 'account_id', 'id');
     }
+
+    public function isSuperAdmin()
+    {
+        return $this->userRole->role_name === "Super Admin";
+    }
 }

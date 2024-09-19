@@ -1,23 +1,15 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Str;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-// Route::get('/redirect', function (Request $request) {
-//     $request->session()->put('state', $state = Str::random(40));
+Route::view('/', 'welcome');
 
-//     $query = http_build_query([
-//         'client_id' => 'client-id',
-//         'redirect_uri' => 'http://third-party-app.com/callback',
-//         'response_type' => 'code',
-//         'scope' => '',
-//         'state' => $state,
-//         // 'prompt' => '', // "none", "consent", or "login"
-//     ]);
+Route::view('dashboard', 'dashboard')
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
-//     return redirect('http://passport-app.test/oauth/authorize?' . $query);
-// });
+Route::view('profile', 'profile')
+    ->middleware(['auth'])
+    ->name('profile');
+
+require __DIR__.'/auth.php';

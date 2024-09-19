@@ -62,12 +62,12 @@ class AppServiceProvider extends ServiceProvider
 
         // TO DO: Implement authentication for laravel/pulse and laravel/horizon webui.
 
-        // Gate::define('viewPulse', function (User $user) {
-        //     return $user->isAdmin();
-        // });
+        Gate::define('viewPulse', function (User $user) {
+            return $user->isSuperAdmin();
+        });
 
         Gate::define('viewHorizon', function (User $user) {
-            return true;
+            return $user->isSuperAdmin();
         });
     }
 }

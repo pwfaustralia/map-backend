@@ -45,13 +45,13 @@ Route::prefix('accounts')->middleware(['cookie-auth', 'auth:api'])->group(functi
     Route::put('/assign', [AccountController::class, 'assignToClient'])->middleware('scope:update-accounts');
 });
 
-// Verify email
-Route::get('/email/verify/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
-    ->middleware(['signed', 'throttle:6,1'])
-    ->name('verification.verify');
+// // Verify email
+// Route::get('/email/verify/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
+//     ->middleware(['signed', 'throttle:6,1'])
+//     ->name('verification.verify');
 
-// Resend link to verify email
-Route::post('/email/verify/resend', function (Request $request) {
-    $request->user()->sendEmailVerificationNotification();
-    return response(['message' => 'Verification link sent!'], 200);
-})->middleware(['cookie-auth', 'auth:api', 'throttle:6,1'])->name('verification.send');
+// // Resend link to verify email
+// Route::post('/email/verify/resend', function (Request $request) {
+//     $request->user()->sendEmailVerificationNotification();
+//     return response(['message' => 'Verification link sent!'], 200);
+// })->middleware(['cookie-auth', 'auth:api', 'throttle:6,1'])->name('verification.send');
