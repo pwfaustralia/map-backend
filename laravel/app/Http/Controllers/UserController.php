@@ -30,18 +30,19 @@ class UserController extends Controller
         $user_data['password'] = bcrypt($user_data['password']);
         $user = User::create($user_data);
 
-
         if ($request['with_client'] === true) {
             try {
                 $request['user_id'] = $user->id;
+                if ($request['notify_email']) {
+                    event(new Registered($user));
+                }
                 return $this->createOrUpdateUserWithClient($request);
             } catch (Exception $e) {
                 $user->forceDelete();
                 return response()->json(['success' => 0, 'errorMessage' => $e->getMessage()], 500);
             }
         }
-
-        // event(new Registered($user));
+        event(new Registered($user));
 
         return response()->json($user, 200);
     }
