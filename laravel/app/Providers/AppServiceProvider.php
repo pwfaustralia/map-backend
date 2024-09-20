@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
 
@@ -50,6 +50,9 @@ class AppServiceProvider extends ServiceProvider
         ]);
         Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
         Passport::enablePasswordGrant();
+
+        URL::forceScheme('https');
+        URL::forceRootUrl(config('app.url'));
 
         VerifyEmail::toMailUsing(function (object $notifiable, string $url) {
             return (new MailMessage)
