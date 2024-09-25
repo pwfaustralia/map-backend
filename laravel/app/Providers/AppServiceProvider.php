@@ -51,7 +51,9 @@ class AppServiceProvider extends ServiceProvider
         Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
         Passport::enablePasswordGrant();
 
-        URL::forceScheme('https');
+        if (config('app.force_https')) {
+            URL::forceScheme('https');
+        }
         URL::forceRootUrl(config('app.url'));
 
         VerifyEmail::toMailUsing(function (object $notifiable, string $url) {

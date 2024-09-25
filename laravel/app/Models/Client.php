@@ -45,7 +45,8 @@ class Client extends Model
             'id' => (string) $this->id,
             'created_at' => $this->created_at->timestamp,
             'custom_fields.data' => (string) $this->customFields?->data,
-            'address_2' => (string) $this->address_2 ?? ""
+            'address_2' => (string) $this->address_2 ?? "",
+            'state' => (string) $this->state ?? ""
         ]);
     }
 
