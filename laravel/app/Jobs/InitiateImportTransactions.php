@@ -117,7 +117,7 @@ class InitiateImportTransactions implements ShouldQueue
             $data['lastUpdated'] = Carbon::parse($data['lastUpdated']);
             $data['client_id'] = $this->clientId;
             $data['batch_id'] = $accountBatchId;
-            array_push($accountBatch, new ImportAccounts(camelToSnakeCaseArray($data)));
+            array_push($accountBatch, new ImportAccount(camelToSnakeCaseArray($data)));
         }
         Bus::batch($accountBatch)
             ->before(function (Batch $batch) {

@@ -23,7 +23,7 @@
 4. Install Composer and PHP dependencies:
    ```bash
    composer install
-   docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl
+   docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl intl
    ```
 
 5. Run the database migrations:

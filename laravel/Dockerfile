@@ -8,6 +8,7 @@ LABEL maintainer="er.avinashrathod@gmail.com"
 # Install system dependencies.
 RUN apt-get update && apt-get install -y \
     supervisor \
+    libicu-dev \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
@@ -30,7 +31,7 @@ COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
 
 # Install PHP extensions.
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl
+    && docker-php-ext-install -j$(nproc) gd pdo pdo_mysql pcntl intl
 
 # Install Composer globally.
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

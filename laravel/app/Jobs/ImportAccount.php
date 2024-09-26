@@ -7,7 +7,7 @@ use Illuminate\Bus\Batchable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 
-class ImportAccounts implements ShouldQueue
+class ImportAccount implements ShouldQueue
 {
     use Batchable, Queueable;
 

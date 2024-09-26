@@ -16,3 +16,12 @@ if (! function_exists('camelToSnakeCaseArray')) {
         return $convertedArray;
     }
 }
+
+if (! function_exists(('PMT'))) {
+    function PMT($rate, $nper, $pv, $fv = 0, $type = 0)
+    {
+        return (-$fv - $pv * pow(1 + $rate, $nper)) /
+            (1 + $rate * $type) /
+            ((pow(1 + $rate, $nper) - 1) / $rate);
+    }
+}

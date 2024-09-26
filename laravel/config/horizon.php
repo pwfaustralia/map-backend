@@ -181,7 +181,7 @@ return [
     'defaults' => [
         'supervisor-1' => [
             'connection' => 'redis',
-            'queue' => ['default', 'initiate-import-queue', 'import-queue'],
+            'queue' => ['default', 'initiate-import-queue', 'import-queue', 'generate-loan-balance-scenario'],
             'balance' => 'auto',
             'autoScalingStrategy' => 'time',
             'maxProcesses' => 1,
