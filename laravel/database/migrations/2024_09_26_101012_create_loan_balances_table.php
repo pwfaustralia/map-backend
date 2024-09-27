@@ -17,6 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('loan_account_id');
             $table->string('currency')->default('AUD');
             $table->string('scenario')->default('normal');
+            $table->integer('offset_amount')->nullable();
+            $table->integer('credit_card_amount')->nullable();
+            $table->integer('offset_balance')->nullable();
             $table->timestamps();
         });
     }

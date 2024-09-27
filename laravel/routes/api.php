@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\LoanBalanceController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VerifyEmailController;
+use App\Models\LoanBalance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -42,6 +44,11 @@ Route::prefix('transactions')->middleware(['cookie-auth', 'auth:api'])->group(fu
 // Accounts
 Route::prefix('accounts')->middleware(['cookie-auth', 'auth:api'])->group(function () {
     Route::put('/assign', [AccountController::class, 'assignToClient'])->middleware('scope:update-accounts');
+});
+
+// Loan Balances
+Route::prefix('loanbalances')->middleware(['cookie-auth', 'auth:api'])->group(function () {
+    Route::get('/list', [LoanBalanceController::class, 'listLoanBalances'])->middleware('scope:view-accounts');
 });
 
 // // Verify email
