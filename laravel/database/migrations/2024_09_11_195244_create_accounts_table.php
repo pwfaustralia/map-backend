@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('accounts', function (Blueprint $table) {
             $table->softDeletes();
             $table->uuid('id')->primary();
+            $table->string('container');
+            $table->boolean('is_primary')->default(false);
             $table->unsignedBigInteger('account_id')->unique();
             $table->uuid('client_id')->nullable();
             $table->timestamp('created_date')->nullable();

@@ -16,7 +16,7 @@ class LoanBalanceController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'scenario' => 'required|in:normal,offset',
-            'loan_account_id' => 'required|exists:accounts,account_id'
+            // 'loan_account_id' => 'required|exists:accounts,account_id'
         ]);
         if ($validation->fails()) {
             return response($validation->errors(), 202);
@@ -42,8 +42,8 @@ class LoanBalanceController extends Controller
                 FROM loan_balances
                 WHERE scenario = ?
                 AND loan_account_id = ?
-                AND month != 1
-                AND (month = 0 or MOD(month - 1, 12) = 0)',
+                AND month != 12
+                AND (month = 0 or MOD(month, 12) = 0)',
                 [$request['scenario'], $request['loan_account_id']]
             );
         } else {
@@ -92,7 +92,7 @@ class LoanBalanceController extends Controller
                 "loan_account_id" => $accountId,
                 "scenario" => 'normal'
             ]);
-        }, array_fill(0, $term * $monthsInYear, null));
+        }, array_fill(0, $term * $monthsInYear + 1, null));
 
         return $loanBalanceList;
     }
@@ -133,7 +133,7 @@ class LoanBalanceController extends Controller
                 "offset_balance" => $offsetBalance,
                 "scenario" => 'offset'
             ]);
-        }, array_fill(0, $term * $monthsInYear, null));
+        }, array_fill(0, $term * $monthsInYear + 1, null));
 
         return $loanBalanceList;
     }

@@ -81,6 +81,7 @@ class InitiateImportTransactions implements ShouldQueue
         $transactionBatchId = Str::uuid();
         $accountId = '';
         $client = Client::find($this->clientId);
+        $isPrimarySet = false;
 
         foreach ($this->transactions['transaction'] as &$data) {
             $accountId = $data['accountId'];
@@ -112,6 +113,10 @@ class InitiateImportTransactions implements ShouldQueue
         $accountBatch = [];
         $accountBatchId = Str::uuid();
         foreach ($this->accounts['account'] as &$data) {
+            if (!$isPrimarySet && $data['CONTAINER'] === "loan") {
+                $isPrimarySet = true;
+                $data['is_primary'] = $isPrimarySet;
+            }
             $data['account_id'] = $data['id'];
             $data['createdDate'] = Carbon::parse($data['createdDate']);
             $data['lastUpdated'] = Carbon::parse($data['lastUpdated']);

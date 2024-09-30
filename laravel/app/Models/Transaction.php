@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -13,6 +14,7 @@ class Transaction extends Model
 
     protected $fillable = [
         'container',
+        'base_type',
         'transaction_id',
         'amount',
         'currency',
@@ -38,5 +40,13 @@ class Transaction extends Model
     public function account()
     {
         return $this->belongsTo(Account::class, 'account_id', 'account_id');
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $model->id = (string) Str::uuid();
+        });
     }
 }

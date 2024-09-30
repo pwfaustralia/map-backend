@@ -156,4 +156,19 @@ class ClientController extends Controller
 
         return response()->json($client);
     }
+
+    public function getLoanAccounts(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id')], [
+            'id' => 'required|exists:clients,id'
+        ]);
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+        $client = Client::where("id", $request->route('id'))->first();
+        if ($request['primary'] == true) {
+            return response()->json($client->primaryAccount, 200);
+        }
+        return response()->json($client->accounts, 200);
+    }
 }

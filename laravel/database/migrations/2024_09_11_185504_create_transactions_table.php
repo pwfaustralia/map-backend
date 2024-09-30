@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('currency', 3)->default('USD');
             $table->string('category_type')->default('UNCATEGORIZE');
             $table->unsignedBigInteger('category_id');
+            $table->string('base_type')->nullable();
             $table->string('category')->default('Uncategorised');
             $table->string('category_source')->default('SYSTEM');
             $table->unsignedBigInteger('high_level_category_id');
