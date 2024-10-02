@@ -32,6 +32,7 @@ Route::prefix('clients')->middleware(['cookie-auth', 'auth:api'])->group(functio
     Route::get('/', [ClientController::class, 'listClients'])->middleware('scope:view-all-clients');
     Route::get('/{id}', [ClientController::class, 'getClient'])->middleware('scope:view-clients');
     Route::get('/{id}/loanaccounts', [ClientController::class, 'getLoanAccounts'])->middleware(['scope:view-clients', 'scope:view-accounts']);
+    Route::post('/{id}/setloanprimaryaccount', [ClientController::class, 'setPrimaryLoanAccount'])->middleware(['scope:update-clients', 'scope:update-accounts']);
     Route::delete('/{id}', [ClientController::class, 'deleteClient'])->middleware('scope:delete-clients');
     Route::get('/{id}/yodlee', [ClientController::class, 'getUserYodleeAccessTokenWithHeader'])->middleware('scope:view-clients');
     Route::get('/{id}/yodlee/status', [ClientController::class, 'getYodleeStatus'])->middleware('scope:view-clients');

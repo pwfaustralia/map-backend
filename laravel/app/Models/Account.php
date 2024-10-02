@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\Money;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Str;
@@ -12,7 +13,13 @@ class Account extends Model
 {
     use HasFactory, HasUuids, SoftDeletes;
 
-    protected $fillable = ['account_id', 'client_id', 'created_date', 'last_updated', 'batch_id', 'is_primary', 'container'];
+    protected $table = 'accounts';
+
+    protected $fillable = ['account_id', 'client_id', 'created_date', 'last_updated', 'batch_id', 'is_primary', 'container', 'original_loan_amount', 'currency'];
+
+    protected $casts = [
+        'original_loan_amount' => Money::class
+    ];
 
     public function transactions()
     {

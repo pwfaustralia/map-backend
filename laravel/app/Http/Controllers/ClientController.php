@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Account;
 use App\Models\Client;
 use App\Rules\UserExistsRule;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 
@@ -170,5 +172,41 @@ class ClientController extends Controller
             return response()->json($client->primaryAccount, 200);
         }
         return response()->json($client->accounts, 200);
+    }
+
+    public function setPrimaryLoanAccount(Request $request)
+    {
+        $validation = Validator::make(['id' => $request->route('id'), ...$request->all()], [
+            'id' => 'required|exists:clients,id',
+            'account_id' => 'required|exists:accounts,account_id'
+        ]);
+        if ($validation->fails()) {
+            return response($validation->errors(), 202);
+        }
+
+        $client = Client::where("id", $request->route('id'))->first();
+        $client->accounts()->update(["is_primary" => false]);
+        $primaryAccount = Account::whereAccountId($request['account_id'])->first();
+        $updateResult = $primaryAccount->update(["is_primary" => true]);
+
+        if (!$updateResult) {
+            return response()->json([
+                "success" => false
+            ], 200);
+        }
+
+        if ($primaryAccount->container === 'loan') {
+            // calculate loan balance scenarios
+            $loanValue = $primaryAccount->original_loan_amount->getMinorAmount()->toInt() / 100;
+            $batch = LoanBalanceController::generateNormalLoanBalanceScenario($loanValue, 0.0569, 24, $primaryAccount->account_id);
+            $job = Bus::batch($batch)->name("Generate Normal Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
+
+            $batch = LoanBalanceController::generateOffsetLoanBalanceScenario($loanValue, 24, $primaryAccount->account_id, 22967.67, 14300);
+            $job = Bus::batch($batch)->name("Generate Offset Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
+        }
+
+        return response()->json([
+            "success" => true
+        ], 200);
     }
 }

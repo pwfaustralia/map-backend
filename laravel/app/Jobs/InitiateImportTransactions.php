@@ -117,6 +117,10 @@ class InitiateImportTransactions implements ShouldQueue
                 $isPrimarySet = true;
                 $data['is_primary'] = $isPrimarySet;
             }
+            if (isset($data['originalLoanAmount'])) {
+                $data['original_loan_amount'] = $data['originalLoanAmount']['amount'];
+                $data['currency'] = $data['originalLoanAmount']['currency'];
+            }
             $data['account_id'] = $data['id'];
             $data['createdDate'] = Carbon::parse($data['createdDate']);
             $data['lastUpdated'] = Carbon::parse($data['lastUpdated']);

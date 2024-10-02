@@ -21,6 +21,8 @@ return new class extends Migration
             $table->timestamp('created_date')->nullable();
             $table->timestamp('last_updated')->nullable();
             $table->uuid('batch_id')->nullable();
+            $table->integer("original_loan_amount")->nullable();
+            $table->string("currency")->default('AUD');
 
             $table->timestamps();
         });
