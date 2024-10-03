@@ -2,7 +2,6 @@
 
 namespace App\Jobs;
 
-use App\Http\Controllers\ClientController;
 use App\Http\Controllers\YodleeController;
 use App\Models\Client;
 use Illuminate\Bus\Queueable;
@@ -32,22 +31,15 @@ class InitiateImportTransactions implements ShouldQueue
 
     public function __construct($username, $clientId, $filters)
     {
-        $cache_key = 'yodlee_' . $username;
-        if (!Cache::has($cache_key)) {
-            $initialToken = app(ClientController::class)->getYodleeAccessToken($username);
-            if (!isset($initialToken->token)) {
-                $this->response = [
-                    "success" => false,
-                    "message" => "Can't get yodlee access token for " . $username
-                ];
-                return;
-            }
-            $token_cache[$cache_key] = $initialToken->token->accessToken;
-            $this->token = $initialToken->token->accessToken;
-            cache($token_cache, now()->addMinutes(30));
-        } else {
-            $this->token = cache($cache_key);
+        $getAccessToken = app(YodleeController::class)->getCachedYodleeAccessToken($username);
+        if ($getAccessToken[0]) {
+            $this->response = [
+                "success" => false,
+                "message" => "Can't get yodlee access token for " . $username
+            ];
+            return;
         }
+        $this->token = $getAccessToken[1];
         $this->filters = $filters;
         $this->clientId = $clientId;
         $this->username = $username;

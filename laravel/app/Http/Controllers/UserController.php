@@ -97,7 +97,7 @@ class UserController extends Controller
         }
         $user['default_page'] = $default_page;
 
-        $get_yodlee_acess_tokens = $this->getYodleeAccessTokens($user);
+        $get_yodlee_acess_tokens = app(YodleeController::class)->getYodleeAccessTokens($user);
 
         if ($get_yodlee_acess_tokens['error']) {
             $user['yodlee_error'] = $get_yodlee_acess_tokens['error'];
@@ -112,48 +112,6 @@ class UserController extends Controller
         ))->withHeaders([
             'X-Yodlee-AccessToken' => $get_yodlee_acess_tokens['tokens'],
         ]);
-    }
-
-    public function getYodleeAccessTokens(User $user, $return_as_array = false)
-    {
-        $yodlee_usernames = array_map(fn($c) => $c->yodlee_username, array_filter($user->clients->all(), fn($c) => $c->yodlee_username != ''));
-        $yodlee_usernames = array_unique($yodlee_usernames);
-        $yodlee_tokens = array();
-        $error = null;
-
-        foreach ($yodlee_usernames as $yodlee_username) {
-            try {
-                $client = new \GuzzleHttp\Client();
-                $yodlee_url = config('app.env') == 'production' ? config('app.yodlee_prod_url') : config('app.yodlee_sandbox_url');
-                $response = $client->request('POST', $yodlee_url . '/auth/token', [
-                    'headers' => [
-                        'Api-Version' => '1.1',
-                        'loginName' => $yodlee_username,
-                        'Content-Type' => 'application/x-www-form-urlencoded'
-                    ],
-                    'form_params' => [
-                        'clientId' => config('app.yodlee_client_id'),
-                        'secret' => config('app.yodlee_client_secret')
-                    ]
-                ]);
-                $resp = json_decode($response->getBody());
-                $resp->username = $yodlee_username;
-                array_push($yodlee_tokens, $resp);
-            } catch (\GuzzleHttp\Exception\ClientException $e) {
-                $response = $e->getResponse();
-                $error = json_decode($response->getBody());
-            }
-        }
-
-        if (!$return_as_array) {
-            $yodlee_tokens = array_map(fn($tok) => $tok->username . '=' . $tok->token->accessToken, $yodlee_tokens);
-            $yodlee_tokens = implode(';', $yodlee_tokens);
-        }
-
-        return [
-            "tokens" => $yodlee_tokens,
-            "error" => $error
-        ];
     }
 
     public function getUser(Request $request)

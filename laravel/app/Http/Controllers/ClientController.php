@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Account;
 use App\Models\Client;
+use App\Models\LoanBalance;
 use App\Rules\UserExistsRule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Bus;
@@ -40,7 +41,7 @@ class ClientController extends Controller
             return response($validation->errors(), 202);
         }
 
-        $client = Client::with(['user'])->withCount(['accounts', 'transactions'])->find($request->route('id'));
+        $client = Client::with(['user', 'primaryAccount'])->withCount(['accounts', 'transactions'])->find($request->route('id'));
 
         return response($client, 200);
     }
@@ -102,63 +103,6 @@ class ClientController extends Controller
         return response($client, 200);
     }
 
-    public function getUserYodleeAccessTokenWithHeader(Request $request)
-    {
-        $validation = Validator::make(['id' => $request->route('id')], [
-            'id' => 'required|exists:clients,id'
-        ]);
-        if ($validation->fails()) {
-            return response($validation->errors(), 202);
-        }
-        $client = Client::find($request->route('id'));
-        $yodlee_acess_token = $this->getYodleeAccessToken($request['username'] ?? $client->yodlee_username);
-        return response()->json($yodlee_acess_token, 200);
-    }
-
-    public function getYodleeAccessToken($yodlee_username)
-    {
-        $error = null;
-        $token = [];
-
-        try {
-            $client = new \GuzzleHttp\Client();
-            $yodlee_url = config('app.env') == 'production' ? config('app.yodlee_prod_url') : config('app.yodlee_sandbox_url');
-            $response = $client->request('POST', $yodlee_url . '/auth/token', [
-                'headers' => [
-                    'Api-Version' => '1.1',
-                    'loginName' => $yodlee_username,
-                    'Content-Type' => 'application/x-www-form-urlencoded'
-                ],
-                'form_params' => [
-                    'clientId' => config('app.yodlee_client_id'),
-                    'secret' => config('app.yodlee_client_secret')
-                ]
-            ]);
-            $resp = json_decode($response->getBody());
-            $resp->username = $yodlee_username;
-            $token = $resp;
-        } catch (\GuzzleHttp\Exception\ClientException $e) {
-            $response = $e->getResponse();
-            $error = json_decode($response->getBody());
-            $token['error'] = $error;
-        }
-
-        return $token;
-    }
-
-    public function getYodleeStatus(Request $request)
-    {
-        $validation = Validator::make(['id' => $request->route('id')], [
-            'id' => 'required|exists:clients,id'
-        ]);
-        if ($validation->fails()) {
-            return response($validation->errors(), 202);
-        }
-        $client = Client::where("id", $request->route('id'))->first(['yodlee_status']);
-
-        return response()->json($client);
-    }
-
     public function getLoanAccounts(Request $request)
     {
         $validation = Validator::make(['id' => $request->route('id')], [
@@ -191,22 +135,83 @@ class ClientController extends Controller
 
         if (!$updateResult) {
             return response()->json([
-                "success" => false
+                "success" => false,
+                "message" => "Failed to set Primary Loan Account"
             ], 200);
         }
 
         if ($primaryAccount->container === 'loan') {
-            // calculate loan balance scenarios
-            $loanValue = $primaryAccount->original_loan_amount->getMinorAmount()->toInt() / 100;
-            $batch = LoanBalanceController::generateNormalLoanBalanceScenario($loanValue, 0.0569, 24, $primaryAccount->account_id);
-            $job = Bus::batch($batch)->name("Generate Normal Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
+            // delete existing account calculation
+            LoanBalance::whereLoanAccountId($primaryAccount->account_id)->forceDelete();
+            // get yodlee access token
+            $getAccessToken = app(YodleeController::class)->getCachedYodleeAccessToken($client->yodlee_username);
+            if ($getAccessToken[0]) {
+                return response()->json([
+                    "success" => false,
+                    "message" => "Primary Loan Account has been set. However the system could not calculate the loan balance due to missing data"
+                ], 200);
+            }
+            // get average monthly expenses
+            $transactionSummary = app(YodleeController::class)
+                ->get(
+                    "/derived/transactionSummary",
+                    [
+                        "fromDate" => date("Y-m-d", strtotime("-12 months")),
+                        "toDate" => date('Y-m-d'),
+                        "groupBy" => "CATEGORY",
+                        "categoryType" => "INCOME,EXPENSE"
+                    ],
+                    $getAccessToken[1]
+                );
+            $loanDepositSummary = app(YodleeController::class)
+                ->get(
+                    "/derived/transactionSummary",
+                    [
+                        "fromDate" => date("Y-m-d", strtotime("-12 months")),
+                        "toDate" => date('Y-m-d'),
+                        "groupBy" => "CATEGORY",
+                        "categoryType" => "TRANSFER",
+                        "accountId" => $primaryAccount->account_id
+                    ],
+                    $getAccessToken[1]
+                );
+            if (isset($transactionSummary['transactionSummary'])) {
+                // set average income and expenses
+                $averageLoanDeposit = 0;
+                $averageCombinedIncome = 0;
+                $averageMonthlyExpenses = 0;
+                foreach ($transactionSummary['transactionSummary'] as $summary) {
+                    if ($summary['categoryType'] === 'INCOME') {
+                        $averageCombinedIncome += $summary['creditTotal']['amount'] / 12;
+                    } else if ($summary['categoryType'] === 'EXPENSE') {
+                        $averageMonthlyExpenses += $summary['debitTotal']['amount'] / 12;
+                    }
+                }
+                // set average loan deposit
+                if (isset($loanDepositSummary['transactionSummary'])) {
+                    $averageLoanDeposit = $loanDepositSummary['transactionSummary'][0]['debitTotal']['amount'] / 12;
+                } else {
+                    $averageLoanDeposit = $averageCombinedIncome - $averageMonthlyExpenses;
+                }
+                // calculate loan balance scenarios
+                $loanValue = $primaryAccount->original_loan_amount->getMinorAmount()->toInt() / 100;
+                $batch = LoanBalanceController::generateNormalLoanBalanceScenario($loanValue, 0.0569, 24, $primaryAccount->account_id, $averageLoanDeposit);
+                $job1 = Bus::batch($batch)->name("Generate Normal Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
 
-            $batch = LoanBalanceController::generateOffsetLoanBalanceScenario($loanValue, 24, $primaryAccount->account_id, 22967.67, 14300);
-            $job = Bus::batch($batch)->name("Generate Offset Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
+                $batch = LoanBalanceController::generateOffsetLoanBalanceScenario($loanValue, 24, $primaryAccount->account_id, $averageCombinedIncome, $averageMonthlyExpenses);
+                $job2 = Bus::batch($batch)->name("Generate Offset Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
+
+                return response()->json([
+                    "success" => true,
+                    "message" => "Primary Loan Account has been set and loan balance is being calculated in the background.",
+                    "jobs" => ["job1" => $job1, "job2" => $job2]
+                ], 200);
+            }
         }
 
         return response()->json([
-            "success" => true
+            "success" => false,
+            "message" => "Primary Loan Account has been set. However the system could not calculate the loan balance due to missing data."
         ], 200);
     }
 }

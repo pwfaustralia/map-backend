@@ -6,6 +6,7 @@ use App\Http\Controllers\LoanBalanceController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VerifyEmailController;
+use App\Http\Controllers\YodleeController;
 use App\Models\LoanBalance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -34,8 +35,8 @@ Route::prefix('clients')->middleware(['cookie-auth', 'auth:api'])->group(functio
     Route::get('/{id}/loanaccounts', [ClientController::class, 'getLoanAccounts'])->middleware(['scope:view-clients', 'scope:view-accounts']);
     Route::post('/{id}/setloanprimaryaccount', [ClientController::class, 'setPrimaryLoanAccount'])->middleware(['scope:update-clients', 'scope:update-accounts']);
     Route::delete('/{id}', [ClientController::class, 'deleteClient'])->middleware('scope:delete-clients');
-    Route::get('/{id}/yodlee', [ClientController::class, 'getUserYodleeAccessTokenWithHeader'])->middleware('scope:view-clients');
-    Route::get('/{id}/yodlee/status', [ClientController::class, 'getYodleeStatus'])->middleware('scope:view-clients');
+    Route::get('/{id}/yodlee', [YodleeController::class, 'getUserYodleeAccessTokenWithHeader'])->middleware('scope:view-clients');
+    Route::get('/{id}/yodlee/status', [YodleeController::class, 'getYodleeStatus'])->middleware('scope:view-clients');
 });
 
 // Transactions

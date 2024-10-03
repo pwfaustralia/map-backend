@@ -75,14 +75,14 @@ class LoanBalanceController extends Controller
         return $loanBalance;
     }
 
-    public static function generateNormalLoanBalanceScenario($loanValue, $interestRateInDecimal, $term, $accountId, $monthsInYear = 12, $currency = 'AUD')
+    public static function generateNormalLoanBalanceScenario($loanValue, $interestRateInDecimal, $term, $accountId, $averageDeposit, $monthsInYear = 12, $currency = 'AUD')
     {
         $monthlyPayment = PMT($interestRateInDecimal / $monthsInYear, $term * $monthsInYear, -$loanValue);
 
-        $loanBalanceList = array_map(function ($data) use ($loanValue, $interestRateInDecimal, $monthsInYear, $monthlyPayment, $currency, $accountId) {
+        $loanBalanceList = array_map(function ($data) use ($loanValue, $interestRateInDecimal, $monthsInYear, $monthlyPayment, $averageDeposit, $currency, $accountId) {
             static $index = -1;
             $index++;
-            $deposit = 7785 * ($index - 1);
+            $deposit = $averageDeposit * ($index - 1);
 
             return new GenerateLoanBalanceScenario([
                 "month" => $index,
