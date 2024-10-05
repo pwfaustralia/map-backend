@@ -148,7 +148,7 @@ class ClientController extends Controller
             if ($getAccessToken[0]) {
                 return response()->json([
                     "success" => false,
-                    "message" => "Primary Loan Account has been set. However the system could not calculate the loan balance due to missing data"
+                    "message" => "Primary Loan Account has been set. However the system could not calculate the loan balance due to missing data."
                 ], 200);
             }
             // get average monthly expenses
@@ -195,10 +195,10 @@ class ClientController extends Controller
                 }
                 // calculate loan balance scenarios
                 $loanValue = $primaryAccount->original_loan_amount->getMinorAmount()->toInt() / 100;
-                $batch = LoanBalanceController::generateNormalLoanBalanceScenario($loanValue, 0.0569, 24, $primaryAccount->account_id, $averageLoanDeposit);
+                $batch = LoanBalanceController::generateNormalLoanBalanceScenario($loanValue, 0.0569, 30, $primaryAccount->account_id, $averageLoanDeposit);
                 $job1 = Bus::batch($batch)->name("Generate Normal Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
 
-                $batch = LoanBalanceController::generateOffsetLoanBalanceScenario($loanValue, 24, $primaryAccount->account_id, $averageCombinedIncome, $averageMonthlyExpenses);
+                $batch = LoanBalanceController::generateOffsetLoanBalanceScenario($loanValue, 30, $primaryAccount->account_id, $averageCombinedIncome, $averageMonthlyExpenses);
                 $job2 = Bus::batch($batch)->name("Generate Offset Loan Balance Scenario")->onQueue("generate-loan-balance-scenario")->dispatch();
 
                 return response()->json([

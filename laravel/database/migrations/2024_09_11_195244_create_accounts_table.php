@@ -16,7 +16,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('container');
             $table->boolean('is_primary')->default(false);
-            $table->unsignedBigInteger('account_id')->unique();
+            $table->unsignedBigInteger('account_id');
             $table->uuid('client_id')->nullable();
             $table->timestamp('created_date')->nullable();
             $table->timestamp('last_updated')->nullable();
