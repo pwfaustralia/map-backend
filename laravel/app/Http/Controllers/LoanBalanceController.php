@@ -28,6 +28,7 @@ class LoanBalanceController extends Controller
             $loanBalances = DB::select(
                 '
                 SELECT
+                currency,
                 scenario,
                 (CASE
                     WHEN month = 0
@@ -52,6 +53,7 @@ class LoanBalanceController extends Controller
                 SELECT
                 scenario,
                 month,
+                currency,
                 ROUND(CAST(balance/100 as float), 2) as balance,
                 ROUND(CAST(deposit/100 as float), 2) as deposit,
                 ROUND(CAST(offset_amount/100 as float), 2) as offset_amount,
